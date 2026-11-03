@@ -64,4 +64,19 @@ class StudentE9A241880617(unittest.TestCase):
             self.assertEqual(result['actual']['helper.o'],['extra.h','helper.c'])
             self.assertIn(['MISSING','helper.o','extra.h'],result['added'])
             self.assertEqual(result['actual']['main.o'],old['actual']['main.o'])
+class StudentE10A241880617(unittest.TestCase):
+    def test_remove_redundant_declaration_clears_rd(self):
+        with tempfile.TemporaryDirectory() as directory:
+            p=Path(directory)/'sample'
+            fixture(p)
+            old=scan(p)
+            f=p/'Makefile'
+            f.write_text(f.read_text().replace('main.c unused.h','main.c'))
+            commit(p,'student: drop redundant declaration')
+            result=scan(p,old)
+            self.assertEqual(result['reused'],['main.o','helper.o'])
+            self.assertEqual(result['refreshed'],[])
+            self.assertEqual(result['declared']['main.o'],['main.c'])
+            self.assertIn({'type':'MISSING','target':'main.o','dependency':'config.h'},result['findings'])
+            self.assertNotIn({'type':'REDUNDANT','target':'main.o','dependency':'unused.h'},result['findings'])
 if __name__=='__main__':unittest.main()
