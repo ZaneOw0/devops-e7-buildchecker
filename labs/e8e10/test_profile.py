@@ -51,4 +51,17 @@ class StudentE8A241880617(unittest.TestCase):
             self.assertEqual(result['findings'],old['findings'])
             self.assertEqual(result['reused'],[])
             self.assertEqual(set(result['refreshed']),{'main.o','helper.o'})
+class StudentE9A241880617(unittest.TestCase):
+    def test_helper_include_adds_target_specific_md(self):
+        with tempfile.TemporaryDirectory() as directory:
+            p=Path(directory)/'sample'
+            fixture(p)
+            old=scan(p)
+            (p/'helper.c').write_text('#include "extra.h"\n'+(p/'helper.c').read_text())
+            commit(p,'student: helper includes extra')
+            result=scan(p,old)
+            self.assertEqual(set(result['refreshed']),{'main.o','helper.o'})
+            self.assertEqual(result['actual']['helper.o'],['extra.h','helper.c'])
+            self.assertIn(['MISSING','helper.o','extra.h'],result['added'])
+            self.assertEqual(result['actual']['main.o'],old['actual']['main.o'])
 if __name__=='__main__':unittest.main()
