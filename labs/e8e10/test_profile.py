@@ -58,4 +58,23 @@ class StudentE8Tests(unittest.TestCase):
                  ('REDUNDANT','main.o','unused.h')})
             self.assertEqual(result['actual'],scan(project)['actual'])
 
+
+class StudentE9Tests(unittest.TestCase):
+    def test_removed_include_resolves_missing_edge(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project=Path(directory)/'sample'
+            fixture(project)
+            source=project/'main.c'
+            original=source.read_text()
+            source.write_text('#include "extra.h"\n'+original)
+            commit(project,'student: add include')
+            previous=scan(project)
+            source.write_text(original)
+            commit(project,'student: remove include')
+            result=scan(project,previous)
+            self.assertEqual(result['actual']['main.o'],['config.h','main.c'])
+            self.assertEqual(result['resolved'],[['MISSING','main.o','extra.h']])
+            self.assertEqual(set(result['refreshed']),{'main.o','helper.o'})
+            self.assertEqual(result['findings'],scan(project)['findings'])
+
 if __name__=='__main__':unittest.main()
