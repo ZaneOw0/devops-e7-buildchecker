@@ -77,4 +77,26 @@ class StudentE9Tests(unittest.TestCase):
             self.assertEqual(set(result['refreshed']),{'main.o','helper.o'})
             self.assertEqual(result['findings'],scan(project)['findings'])
 
+
+class StudentE10Tests(unittest.TestCase):
+    def test_nested_include_incremental_equals_full(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project=Path(directory)/'sample'
+            fixture(project)
+            previous=scan(project)
+            (project/'config.h').write_text('#include "extra.h"\n#define VALUE 1\n')
+            (project/'extra.h').write_text('#include "leaf.h"\n')
+            (project/'leaf.h').write_text('#define LEAF 7\n')
+            commit(project,'student: nested include')
+            incremental=scan(project,previous)
+            full=scan(project)
+            self.assertEqual(incremental['actual']['main.o'],
+                             ['config.h','extra.h','leaf.h','main.c'])
+            self.assertEqual(
+                {(f['type'],f['target'],f['dependency']) for f in incremental['findings']},
+                {('MISSING','main.o','config.h'),('MISSING','main.o','extra.h'),
+                 ('MISSING','main.o','leaf.h'),('REDUNDANT','main.o','unused.h')})
+            for key in ['actual','declared','findings']:
+                self.assertEqual(incremental[key],full[key])
+
 if __name__=='__main__':unittest.main()
