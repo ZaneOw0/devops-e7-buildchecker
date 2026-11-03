@@ -39,4 +39,23 @@ class ProfileTests(unittest.TestCase):
         (self.p/'Makefile').write_text((self.p/'Makefile').read_text().replace('-O0','-include unknown.h'))
         with self.assertRaisesRegex(ValueError,'UNSUPPORTED_FLAGS'):scan(self.p)
 
+
+class StudentE8Tests(unittest.TestCase):
+    def test_transitive_header_invalidates_history(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project=Path(directory)/'sample'
+            fixture(project)
+            previous=scan(project)
+            (project/'config.h').write_text('#include "extra.h"\n#define VALUE 1\n')
+            commit(project,'student: add transitive include')
+            result=scan(project,previous)
+            self.assertEqual(result['actual']['main.o'],['config.h','extra.h','main.c'])
+            self.assertEqual(set(result['refreshed']),{'main.o','helper.o'})
+            self.assertEqual(result['reused'],[])
+            self.assertEqual(
+                {(f['type'],f['target'],f['dependency']) for f in result['findings']},
+                {('MISSING','main.o','config.h'),('MISSING','main.o','extra.h'),
+                 ('REDUNDANT','main.o','unused.h')})
+            self.assertEqual(result['actual'],scan(project)['actual'])
+
 if __name__=='__main__':unittest.main()
