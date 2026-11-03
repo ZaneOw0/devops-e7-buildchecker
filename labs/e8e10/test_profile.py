@@ -38,5 +38,17 @@ class ProfileTests(unittest.TestCase):
     def test_unsupported_configuration_rejected(self):
         (self.p/'Makefile').write_text((self.p/'Makefile').read_text().replace('-O0','-include unknown.h'))
         with self.assertRaisesRegex(ValueError,'UNSUPPORTED_FLAGS'):scan(self.p)
-
+class StudentE8A241880617(unittest.TestCase):
+    def test_unused_header_content_change_forces_refresh(self):
+        with tempfile.TemporaryDirectory() as directory:
+            p=Path(directory)/'sample'
+            fixture(p)
+            old=scan(p)
+            (p/'unused.h').write_text('#define UNUSED_NOTE "edited"\n')
+            commit(p,'student: edit declared-but-unused header')
+            result=scan(p,old)
+            self.assertEqual(result['actual'],old['actual'])
+            self.assertEqual(result['findings'],old['findings'])
+            self.assertEqual(result['reused'],[])
+            self.assertEqual(set(result['refreshed']),{'main.o','helper.o'})
 if __name__=='__main__':unittest.main()
