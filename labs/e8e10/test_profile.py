@@ -79,4 +79,65 @@ class StudentE10A241880617(unittest.TestCase):
             self.assertEqual(result['declared']['main.o'],['main.c'])
             self.assertIn({'type':'MISSING','target':'main.o','dependency':'config.h'},result['findings'])
             self.assertNotIn({'type':'REDUNDANT','target':'main.o','dependency':'unused.h'},result['findings'])
+
+
+class StudentE8Tests(unittest.TestCase):
+    def test_transitive_header_invalidates_history(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project=Path(directory)/'sample'
+            fixture(project)
+            previous=scan(project)
+            (project/'config.h').write_text('#include "extra.h"\n#define VALUE 1\n')
+            commit(project,'student: add transitive include')
+            result=scan(project,previous)
+            self.assertEqual(result['actual']['main.o'],['config.h','extra.h','main.c'])
+            self.assertEqual(set(result['refreshed']),{'main.o','helper.o'})
+            self.assertEqual(result['reused'],[])
+            self.assertEqual(
+                {(f['type'],f['target'],f['dependency']) for f in result['findings']},
+                {('MISSING','main.o','config.h'),('MISSING','main.o','extra.h'),
+                 ('REDUNDANT','main.o','unused.h')})
+            self.assertEqual(result['actual'],scan(project)['actual'])
+
+
+class StudentE9Tests(unittest.TestCase):
+    def test_removed_include_resolves_missing_edge(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project=Path(directory)/'sample'
+            fixture(project)
+            source=project/'main.c'
+            original=source.read_text()
+            source.write_text('#include "extra.h"\n'+original)
+            commit(project,'student: add include')
+            previous=scan(project)
+            source.write_text(original)
+            commit(project,'student: remove include')
+            result=scan(project,previous)
+            self.assertEqual(result['actual']['main.o'],['config.h','main.c'])
+            self.assertEqual(result['resolved'],[['MISSING','main.o','extra.h']])
+            self.assertEqual(set(result['refreshed']),{'main.o','helper.o'})
+            self.assertEqual(result['findings'],scan(project)['findings'])
+
+
+class StudentE10Tests(unittest.TestCase):
+    def test_nested_include_incremental_equals_full(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project=Path(directory)/'sample'
+            fixture(project)
+            previous=scan(project)
+            (project/'config.h').write_text('#include "extra.h"\n#define VALUE 1\n')
+            (project/'extra.h').write_text('#include "leaf.h"\n')
+            (project/'leaf.h').write_text('#define LEAF 7\n')
+            commit(project,'student: nested include')
+            incremental=scan(project,previous)
+            full=scan(project)
+            self.assertEqual(incremental['actual']['main.o'],
+                             ['config.h','extra.h','leaf.h','main.c'])
+            self.assertEqual(
+                {(f['type'],f['target'],f['dependency']) for f in incremental['findings']},
+                {('MISSING','main.o','config.h'),('MISSING','main.o','extra.h'),
+                 ('MISSING','main.o','leaf.h'),('REDUNDANT','main.o','unused.h')})
+            for key in ['actual','declared','findings']:
+                self.assertEqual(incremental[key],full[key])
+
 if __name__=='__main__':unittest.main()
