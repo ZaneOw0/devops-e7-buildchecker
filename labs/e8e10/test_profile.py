@@ -38,6 +38,47 @@ class ProfileTests(unittest.TestCase):
     def test_unsupported_configuration_rejected(self):
         (self.p/'Makefile').write_text((self.p/'Makefile').read_text().replace('-O0','-include unknown.h'))
         with self.assertRaisesRegex(ValueError,'UNSUPPORTED_FLAGS'):scan(self.p)
+class StudentE8A241880617(unittest.TestCase):
+    def test_unused_header_content_change_forces_refresh(self):
+        with tempfile.TemporaryDirectory() as directory:
+            p=Path(directory)/'sample'
+            fixture(p)
+            old=scan(p)
+            (p/'unused.h').write_text('#define UNUSED_NOTE "edited"\n')
+            commit(p,'student: edit declared-but-unused header')
+            result=scan(p,old)
+            self.assertEqual(result['actual'],old['actual'])
+            self.assertEqual(result['findings'],old['findings'])
+            self.assertEqual(result['reused'],[])
+            self.assertEqual(set(result['refreshed']),{'main.o','helper.o'})
+class StudentE9A241880617(unittest.TestCase):
+    def test_helper_include_adds_target_specific_md(self):
+        with tempfile.TemporaryDirectory() as directory:
+            p=Path(directory)/'sample'
+            fixture(p)
+            old=scan(p)
+            (p/'helper.c').write_text('#include "extra.h"\n'+(p/'helper.c').read_text())
+            commit(p,'student: helper includes extra')
+            result=scan(p,old)
+            self.assertEqual(set(result['refreshed']),{'main.o','helper.o'})
+            self.assertEqual(result['actual']['helper.o'],['extra.h','helper.c'])
+            self.assertIn(['MISSING','helper.o','extra.h'],result['added'])
+            self.assertEqual(result['actual']['main.o'],old['actual']['main.o'])
+class StudentE10A241880617(unittest.TestCase):
+    def test_remove_redundant_declaration_clears_rd(self):
+        with tempfile.TemporaryDirectory() as directory:
+            p=Path(directory)/'sample'
+            fixture(p)
+            old=scan(p)
+            f=p/'Makefile'
+            f.write_text(f.read_text().replace('main.c unused.h','main.c'))
+            commit(p,'student: drop redundant declaration')
+            result=scan(p,old)
+            self.assertEqual(result['reused'],['main.o','helper.o'])
+            self.assertEqual(result['refreshed'],[])
+            self.assertEqual(result['declared']['main.o'],['main.c'])
+            self.assertIn({'type':'MISSING','target':'main.o','dependency':'config.h'},result['findings'])
+            self.assertNotIn({'type':'REDUNDANT','target':'main.o','dependency':'unused.h'},result['findings'])
 
 
 class StudentE8Tests(unittest.TestCase):
