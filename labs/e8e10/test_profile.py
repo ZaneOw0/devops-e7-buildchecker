@@ -140,4 +140,20 @@ class StudentE10Tests(unittest.TestCase):
             for key in ['actual','declared','findings']:
                 self.assertEqual(incremental[key],full[key])
 
+class StudentE8A241880353(unittest.TestCase):
+    def test_function_body_change_reuses_historical_graph(self):
+        with tempfile.TemporaryDirectory() as directory:
+            p=Path(directory)/'sample'
+            fixture(p)
+            old=scan(p)
+            (p/'helper.c').write_text('int helper(void){return 2;}\n')
+            commit(p,'student: change helper return value')
+            result=scan(p,old)
+            self.assertEqual(result['reused'],['main.o','helper.o'])
+            self.assertEqual(result['refreshed'],[])
+            self.assertEqual(result['actual'],old['actual'])
+            self.assertEqual(result['findings'],old['findings'])
+            self.assertEqual(result['added'],[])
+            self.assertEqual(result['resolved'],[])
+
 if __name__=='__main__':unittest.main()
