@@ -11,3 +11,5 @@ __pycache__/
 .pytest_cache/
 
 data/
+# E11–E12 本地实验项目
+/data/
