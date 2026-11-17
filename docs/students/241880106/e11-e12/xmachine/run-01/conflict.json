@@ -1,0 +1,12 @@
+{
+  "idempotency_key": "a05-241880106-e12-real-xmachine-01",
+  "input": {
+    "mode": "e12",
+    "repo": "/course/data/real-project",
+    "base": "0b62c79a6adb4cd913a814068074575afdbbd18b",
+    "target": "0b62c79a6adb4cd913a814068074575afdbbd18b",
+    "candidate": "/course/data/real-candidate.Dockerfile",
+    "expected_output": "1",
+    "build_timeout": 1800
+  }
+}

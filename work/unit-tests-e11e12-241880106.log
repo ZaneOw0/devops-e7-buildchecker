@@ -1,0 +1,25 @@
+IMAGE=course-e11e12:241880106
+test_accept_current_report (test_contract.Contracts.test_accept_current_report) ... ok
+test_api_rejects_repo_outside_data (test_contract.Contracts.test_api_rejects_repo_outside_data) ... ok
+test_artifact_uses_relative_uri_and_content_hash (test_contract.Contracts.test_artifact_uses_relative_uri_and_content_hash) ... ok
+test_changed_artifact_is_rejected (test_contract.Contracts.test_changed_artifact_is_rejected) ... ok
+test_existing_evidence_not_overwritten (test_contract.Contracts.test_existing_evidence_not_overwritten) ... ok
+test_reject_failed_upstream (test_contract.Contracts.test_reject_failed_upstream) ... ok
+test_reject_old_commit (test_contract.Contracts.test_reject_old_commit) ... ok
+test_reject_schema (test_contract.Contracts.test_reject_schema) ... ok
+test_reject_wrong_artifact_kind (test_contract.Contracts.test_reject_wrong_artifact_kind) ... ok
+test_same_key_same_request_same_job (test_contract.Contracts.test_same_key_same_request_same_job) ... ok
+test_helper_new_local_header_adds_missing_dependency (test_student_241880353.StudentE11A241880353.test_helper_new_local_header_adds_missing_dependency) ... ok
+test_incremental_envelope_rejected_when_commit_differs (test_student_241880353.StudentE11A241880353.test_incremental_envelope_rejected_when_commit_differs) ... ok
+test_pinned_broken_accepts_added_run_layer (test_student_241880617.Candidate241880617.test_pinned_broken_accepts_added_run_layer) ... ok
+test_pinned_broken_rejects_changed_digest (test_student_241880617.Candidate241880617.test_pinned_broken_rejects_changed_digest) ... ok
+test_unpinned_broken_still_compares_tags (test_student_241880617.Candidate241880617.test_unpinned_broken_still_compares_tags) ... ok
+test_manifest_hash_guards_repair_consumption (test_student_241880617.Contract241880617.test_manifest_hash_guards_repair_consumption) ... ok
+test_project_include_change_refreshes_all_and_reports_missing (test_student_241880617.Reuse241880617.test_project_include_change_refreshes_all_and_reports_missing) ... ok
+test_recipe_change_alone_refreshes_all (test_student_241880617.Reuse241880617.test_recipe_change_alone_refreshes_all) ... ok
+test_same_key_reuses_every_object (test_student_241880617.Reuse241880617.test_same_key_reuses_every_object) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.167s
+
+OK
