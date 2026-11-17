@@ -110,5 +110,5 @@ class Candidate241880617(unittest.TestCase):
             prepare_candidate(unpinned, CANDIDATE.replace('python:3.13-slim', 'python:3.12-slim'))
 
 
-if __name__ == '__&#8203;main__':
+if __name__ == '__main__':
     unittest.main()
