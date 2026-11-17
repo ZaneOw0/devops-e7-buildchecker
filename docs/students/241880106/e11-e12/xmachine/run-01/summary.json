@@ -1,0 +1,45 @@
+{
+  "client_host": "lima-mac.local",
+  "base_url": "http://127.0.0.1:18081",
+  "idempotency_key": "a05-241880106-e12-real-xmachine-01",
+  "input_sha256_sorted_json": "ae9ae191ab34f0bf83f8a7f864ff43a4d73e28a0e18f09cf3153e23062b38332",
+  "started": "2026-11-16T23:33:19Z",
+  "finished": "2026-11-16T23:33:47Z",
+  "job_id": "job-8863b7eb236943f5aa85ff5934921b30",
+  "trace_id": "trace-9769ebf088df433b86390186a9465a42",
+  "health": "200 {\"status\":\"ok\",\"schema_version\":\"e11e12-1\"}",
+  "submit": {
+    "http": "202",
+    "status": "QUEUED"
+  },
+  "duplicate_submit": {
+    "http": "202",
+    "same_job_id": true
+  },
+  "conflict_submit": {
+    "http": "409",
+    "error": "IDEMPOTENCY_CONFLICT"
+  },
+  "artifacts_before_done": {
+    "http": "200",
+    "error": "already-done"
+  },
+  "final_state": {
+    "schema_version": "e11e12-1",
+    "job_id": "job-8863b7eb236943f5aa85ff5934921b30",
+    "status": "SUCCEEDED",
+    "idempotency_key": "a05-241880106-e12-real-xmachine-01",
+    "request_hash": "50f076896cfc2a6e87b94b5684e1fa725a99d649cb7f616a6d4eba5ab09eb6ae",
+    "trace_id": "trace-9769ebf088df433b86390186a9465a42"
+  },
+  "manifest_artifact_count": 174,
+  "downloads": [
+    "candidate.patch\t200\theader=a7a3be54d5ba81594acd628725f17aca2b4ce0d1a5aed556d454bb321eb5142a\tmanifest=a7a3be54d5ba81594acd628725f17aca2b4ce0d1a5aed556d454bb321eb5142a\tlocal=a7a3be54d5ba81594acd628725f17aca2b4ce0d1a5aed556d454bb321eb5142a\tequal=true",
+    "repair-plan.json\t200\theader=ca830d7c2fc9db590984afe8b96f814b7f080d8b0066fc358c619f9bc2d4ac2a\tmanifest=ca830d7c2fc9db590984afe8b96f814b7f080d8b0066fc358c619f9bc2d4ac2a\tlocal=ca830d7c2fc9db590984afe8b96f814b7f080d8b0066fc358c619f9bc2d4ac2a\tequal=true",
+    "validation/validation.json\t200\theader=0aedd844e45d87669ff3c7ad42fcb15414453a14882df2fa6335997367390c37\tmanifest=0aedd844e45d87669ff3c7ad42fcb15414453a14882df2fa6335997367390c37\tlocal=0aedd844e45d87669ff3c7ad42fcb15414453a14882df2fa6335997367390c37\tequal=true",
+    "recheck.json\t200\theader=355967e865355d411876771a4b89f2e5fd8b59ca5db3e9f76f91c8351174738e\tmanifest=355967e865355d411876771a4b89f2e5fd8b59ca5db3e9f76f91c8351174738e\tlocal=355967e865355d411876771a4b89f2e5fd8b59ca5db3e9f76f91c8351174738e\tequal=true"
+  ],
+  "path_escape_http": "404",
+  "unknown_job_http": "404",
+  "ALL_DOWNLOADS_EQUAL": true
+}
