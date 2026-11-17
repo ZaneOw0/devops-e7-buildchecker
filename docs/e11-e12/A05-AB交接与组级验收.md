@@ -10,7 +10,7 @@ B 组仓库：https://github.com/Rowan-hhh/devops-e4-draft （集成分支 `e11-
 |---|---|---|---|---|
 |孔鹏宇|241880353|E11-A/B、E12 固定样例与本机 API；真实项目 E11-A，向 B2 交付增量报告|#10（已合入集成分支）|`docs/students/241880353/e11-e12/`|
 |饶嘉俊|241880617|换提交实验；A 组仓库内真实项目五阶段；pinned FROM 适配；契约测试 7 项|#12（已合入集成分支；#11 因作者账号不符关闭）|`docs/students/241880617/e11-e12/`|
-|李泽同|241880106|跨机 SSH 转发联调、A/B 交接链核对、组级验收、集成到 main|本人 PR（待提交）|`docs/students/241880106/e11-e12/`|
+|李泽同|241880106|跨机 SSH 转发联调、A/B 交接链核对、组级验收、集成到 main|#13|`docs/students/241880106/e11-e12/`|
 
 ## 2. A/B 真实交接链
 
@@ -102,7 +102,7 @@ B4 最终五阶段：`job-a8c716a97754454d990c997cc9929d4b` / `trace-f535cebe0ae
 |4|报告 schema、commit、job_id、trace_id、产物 SHA 对应|✅|各人 `数据与联调记录.csv`；本文件 §2 一致性表|
 |5|API 提交、轮询、下载；相同幂等键同一任务；冲突请求被拒|✅|本机：241880353、241880617；跨机：`xmachine/run-01/summary.json`；`SERVER_RESTARTED` 探针 `job-d09e0f38…`（241880617）|
 |6|真实仓库和提交范围有来源记录，与生成样例分开提交|✅|真实项目来源与 base/target 见 §2；样例标记 `course-generated`；`data/` 不入库|
-|7|至少一项新增适配或契约测试，代码经个人分支和 PR 提交|✅|`test_student_241880353.py`（2 项）、`test_student_241880617.py`（7 项）+ `autobuild.py` 修复；全部经 PR #10/#12；`run_e11e12.py test` 共 19 项 OK|
+|7|至少一项新增适配或契约测试，代码经个人分支和 PR 提交|✅|`test_student_241880353.py`（2 项）、`test_student_241880617.py`（7 项）+ `autobuild.py` 修复；全部经 PR #10/#12/#13；`run_e11e12.py test` 共 19 项 OK|
 
 ## 5. 已知问题与处理
 
@@ -117,6 +117,6 @@ B4 最终五阶段：`job-a8c716a97754454d990c997cc9929d4b` / `trace-f535cebe0ae
 
 1. ✅ PR #10（241880353）→ `e11-e12-integration`
 2. ✅ PR #12（241880617）→ `e11-e12-integration`
-3. ⏳ 本人个人分支 `student/241880106/e11-e12` → `e11-e12-integration`
+3. ✅ PR #13（241880106）→ `e11-e12-integration`
 4. ⏳ main 分支保护增加 `e11e12-integration` 必需检查
 5. ⏳ `e11-e12-integration` → `main`，三项 CI（E7 质量门禁、E8–E10 回归、E11–E12 集成）全部通过后合并
