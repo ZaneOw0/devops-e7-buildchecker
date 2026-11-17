@@ -33,7 +33,8 @@ def prepare_candidate(broken, candidate):
         raise ValueError("Candidate must start with a digest-pinned FROM")
     if sum(line.upper().startswith("FROM ") for line in proposed) != 1:
         raise ValueError("Only single-stage candidates are supported")
-    if original[0] != proposed[0].split("@", 1)[0]:
+    expected_from = proposed[0] if "@" in original[0] else proposed[0].split("@", 1)[0]
+    if original[0] != expected_from:
         raise ValueError("Candidate changed the original base image tag")
     baseline = [proposed[0], *original[1:]]
     cursor, added = 0, []
