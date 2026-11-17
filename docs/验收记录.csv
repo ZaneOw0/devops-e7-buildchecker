@@ -10,3 +10,9 @@ A02,A,E7,三次一致及故障场景,PASS,evidence/E7/e7-own/gate/gate-result.js
 B01,B,E5,缺失make及候选来源,N/A,,A组不适用
 B02,B,E6,构建和同镜像运行验证,N/A,,A组不适用
 B03,B,E7,五场景与超时清理,N/A,,A组不适用
+C07,共同,E11-E12,A/B真实交接链,PASS,docs/e11-e12/A05-AB交接与组级验收.md,B1 bundle 0a74f580… → A增量报告 66e3bfb2… → B2补丁 → A/B两侧五阶段accepted；各哈希逐项一致
+A03,A,E11,BuildChecker→EChecker轨道集成,PASS,docs/students/241880353/e11-e12/;docs/students/241880617/e11-e12/,固定样例增量与全量一致；换提交C1→C2全部复用、C2→C3全部刷新；STALE_REPORT按预期拒绝
+A04,A,E12,五阶段（固定样例与真实项目）,PASS,docs/students/241880617/e11-e12/个人报告.md;docs/students/241880106/e11-e12/xmachine/run-01/,真实项目base 0b62c79a… target 745ecf26…；MISSING helper.o→output_format.h 修复后为0；CLI与跨机API补丁一致 a7a3be54…
+A05,A,E12,任务API契约与跨机SSH转发,PASS,docs/students/241880106/e11-e12/xmachine/run-01/summary.json,ssh -L 18081→127.0.0.1:8081；202/同键同job/409冲突/404越界/重启后可查；四份产物三方哈希一致
+A06,A,E11-E12,新增适配与契约测试,PASS,labs/e11e12/test_student_241880353.py;labs/e11e12/test_student_241880617.py;labs/e11e12/vendor/draft/autobuild.py,run_e11e12.py test 共19项OK；pinned FROM校验修复；经PR #10 #12合入
+B04,B,E11-E12,DRAFT→MDFixer及B侧五阶段,N/A,https://github.com/Rowan-hhh/devops-e4-draft/tree/e11-e12-integration/reports/E12,B组仓库交付（PR #22–#25）；A组提供增量报告
