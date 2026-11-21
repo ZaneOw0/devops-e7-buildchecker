@@ -1,0 +1,23 @@
+{
+  "schema_version": "e11e12-1",
+  "job_id": "job-3906c9c81316422397aa7b2ac914f615",
+  "trace_id": "trace-f6eeb15489f3400aa586031077903f8f",
+  "status": "FAILED",
+  "stages": [],
+  "error": {
+    "code": "COMMAND_FAILED",
+    "message": "git failed; see base-project-resolve.log"
+  },
+  "artifacts": [
+    {
+      "uri": "artifact://job-3906c9c81316422397aa7b2ac914f615/logs/base-project-resolve.log",
+      "sha256": "9b3fab22fc89a33cf7f4e9d08072e43f29c2999ed2af63b6e8417b2ce9d534b4",
+      "bytes": 32
+    },
+    {
+      "uri": "artifact://job-3906c9c81316422397aa7b2ac914f615/request.json",
+      "sha256": "69a4b7d69ed06aceef937fec20acb5b0d23126b8b0c0a47d311a4a48d08982bd",
+      "bytes": 171
+    }
+  ]
+}

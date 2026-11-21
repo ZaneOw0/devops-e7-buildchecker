@@ -1,0 +1,55 @@
+{
+  "schema_version": "e13-a353-handoff-1",
+  "student_id": "241880353",
+  "role": "A05-detection",
+  "stage": "E13",
+  "recipients": ["B2", "B3"],
+  "branch": "student/241880353/e13-e14",
+  "integration_baseline": "4f39fc3bac39087c666306e3523cfd497fe3dcd9",
+  "b_project": {
+    "source": "Rowan-hhh/devops-e4-draft reports/E12/B1",
+    "repo": "data/real-project",
+    "base": "0b62c79a6adb4cd913a814068074575afdbbd18b",
+    "target": "745ecf2621c8221b97bf0a5435ace50150ef57d4",
+    "bundle_sha256": "0a74f580219b55ab97119cdfa81f730f23fd0d5cbfbf2f986e4791110f3ce608"
+  },
+  "c1": {
+    "out": "work/e13-c1-b-01",
+    "status": "SUCCEEDED",
+    "job_id": "job-33ddc3e1eaea4414ae93291a97cb4ac8",
+    "trace_id": "trace-919a053e37b64c5ba4ab378bd64a5123",
+    "finding": "MISSING helper.o -> output_format.h",
+    "tar": "/root/devops-submissions/241880353/e13-c1-b-project.tar.gz",
+    "tar_sha256": "23c527063448c0b96730569c5c2cc32ed2dbf1ec4cac4e85acbefd88c41331d0",
+    "incremental_check_sha256": "d543f4ccef7666fe95ac8c79e9f8c9b2d2f284b44fd5e2b78b4d22f748ebdf69",
+    "handoff_sha256": "75a29263c245588c517073d0aa231bba51b5ed5287f1f1c9c5a8ee27e99c523d"
+  },
+  "c2": {
+    "out": "work/e13-c2-wrong-target-01",
+    "status": "FAILED",
+    "job_id": "job-47cfdd49666941b497f7ea3b1967ede5",
+    "trace_id": "trace-3c90c8865ae64b339f5aac974b880053",
+    "error_code": "COMMAND_FAILED",
+    "wrong_target": "90646db8b8ad932da1a959d152942f987aaffff2",
+    "stale_report": "stale-incremental-check.json",
+    "stale_sha256": "f5bccbf6ff4fc9dbcf8c9a1a9d588b8af6b245964c324c48698fa1cbc60fbcc3"
+  },
+  "c7": {
+    "failed": {
+      "out": "work/e13-c7-fail-01",
+      "status": "FAILED",
+      "job_id": "job-3906c9c81316422397aa7b2ac914f615",
+      "trace_id": "trace-f6eeb15489f3400aa586031077903f8f",
+      "invalid_base": "0000000000000000000000000000000000000000",
+      "error_code": "COMMAND_FAILED"
+    },
+    "succeeded": {
+      "out": "work/e13-c7-ok-01",
+      "status": "SUCCEEDED",
+      "job_id": "job-f1b48404d04742a0835b117a53ac44a4",
+      "trace_id": "trace-0759c46c3c1f480dbfad124094a76106",
+      "n_artifacts": 95
+    },
+    "isolation": "job_id, trace_id, work directories and artifacts are distinct; B project source unchanged"
+  }
+}
