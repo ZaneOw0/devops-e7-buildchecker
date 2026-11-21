@@ -1,0 +1,161 @@
+{
+  "schema_version": "e13-a617-c6c8-1",
+  "student_id": "241880617",
+  "student_name": "饶嘉俊",
+  "role": "A05-交叉测试 C6/C8",
+  "stage": "E13",
+  "track": "A",
+  "branch": "student/241880617/e13-e14",
+  "integration_baseline": "cc1e1548d5fa035ad9fc0f59bc6b5ae63f0a5b89",
+  "server": "47.97.163.61",
+  "workdir": "/root/devops-students/241880617/buildchecker",
+  "image": {
+    "ref": "course-e11e12:241880617",
+    "image_id": "7ecd346355c6"
+  },
+  "executed_at": {
+    "from": "2026-11-19T22:46:00+08:00",
+    "to": "2026-11-20T00:05:00+08:00"
+  },
+  "c6": {
+    "probe_inject": {
+      "content": "api_key = \"sk-demo…（完整假值仅存于 work/，不入库）\"",
+      "exit_code": 1,
+      "hits": 2,
+      "rules": ["LLM/API Key", "secret assignment"],
+      "text_files": 1,
+      "sha256": "eaa23e89f5ce97902e127ab7e3131d08c5752d43b0c760a178a7dbfb83a445a0"
+    },
+    "probe_clean": {
+      "content": "probe completed; clean content",
+      "exit_code": 0,
+      "hits": 0,
+      "text_files": 1,
+      "sha256": "4149894cbf0da8022229bcd4b0587b0d3038606cecf175387568722155e778e7"
+    },
+    "four_scopes": {
+      "workspace_history": {
+        "evidence": "c6/scan-workspace-history.txt",
+        "exit_code": 0,
+        "files": 181,
+        "result": "未发现问题（含 Git 历史）"
+      },
+      "image": {
+        "evidence": "c6/scan-image.txt",
+        "exit_code": 0,
+        "files": 181,
+        "result": "未发现问题（含镜像层）"
+      },
+      "runtime_baseline": {
+        "evidence": "c6/scan-runtime-baseline.txt",
+        "exit_code": 0,
+        "text_files": 145,
+        "hits": 0,
+        "errors": 0
+      },
+      "runtime_c8": {
+        "evidence": "c6/scan-runtime-c8.txt",
+        "exit_code": 0,
+        "text_files": 367,
+        "hits": 0,
+        "errors": 0
+      },
+      "no_incomplete_scan": true
+    },
+    "scanner_upgrade": {
+      "old_bytes": 2851,
+      "new_bytes": 3177,
+      "false_positive_corpus": "src/e13-upstream-student（H1-jsmn / H2-inih / H3-tiny-AES-c）",
+      "false_positive_text_files": 128,
+      "old_hits": 10,
+      "new_hits": 0,
+      "all_hits_in": "H1-jsmn/*/jsmn.h",
+      "issue_number": 19
+    }
+  },
+  "c8": {
+    "service": "python3 run_e11e12.py serve --port 18090",
+    "health": {
+      "http": 200,
+      "body": "{\"status\": \"ok\", \"schema_version\": \"e11e12-1\"}"
+    },
+    "request": {
+      "file": "data/e11-a-b1.json",
+      "mode": "e11-a",
+      "repo": "data/real-project",
+      "base": "0b62c79a6adb4cd913a814068074575afdbbd18b",
+      "target": "745ecf2621c8221b97bf0a5435ace50150ef57d4",
+      "owner": "B group project"
+    },
+    "cases": [
+      {
+        "case": 1,
+        "desc": "同键同输入，首次",
+        "expected": "202 new",
+        "http": 202,
+        "job_id": "job-c7dba69cc8ed4fbaac285432745ea28a",
+        "status": "QUEUED"
+      },
+      {
+        "case": 2,
+        "desc": "同键同输入，第二次",
+        "expected": "202 same job_id",
+        "http": 202,
+        "job_id": "job-c7dba69cc8ed4fbaac285432745ea28a",
+        "status": "RUNNING"
+      },
+      {
+        "case": 3,
+        "desc": "同键不同输入",
+        "expected": "409 IDEMPOTENCY_CONFLICT",
+        "http": 409,
+        "body": "{\"error\": \"IDEMPOTENCY_CONFLICT\"}"
+      },
+      {
+        "case": 4,
+        "desc": "换键同输入",
+        "expected": "202 different job_id",
+        "http": 202,
+        "job_id": "job-8b364b7e8e6543f4890f7a76ffadf139",
+        "status": "QUEUED"
+      }
+    ],
+    "verdict": "C8_IDEMPOTENCY=PASS",
+    "jobs_before": 2,
+    "jobs_after": 4,
+    "new_job_dirs": 2,
+    "reuse_created_new_dir": false,
+    "digest_scope": "sha256(json.dumps(request, sort_keys=True))，不含 idempotency_key",
+    "terminals": [
+      {
+        "job_id": "job-c7dba69cc8ed4fbaac285432745ea28a",
+        "status": "SUCCEEDED",
+        "error": null,
+        "trace_id": "trace-5e1f6f3f41b141d582815a8b8497bb15",
+        "stages": ["full-check", "incremental-check"],
+        "artifacts": 95,
+        "artifacts_verified": true
+      },
+      {
+        "job_id": "job-8b364b7e8e6543f4890f7a76ffadf139",
+        "status": "SUCCEEDED",
+        "error": null,
+        "trace_id": "trace-e328b57679844b3c8c697c0c8f05bf92",
+        "stages": ["full-check", "incremental-check"],
+        "artifacts": 95,
+        "artifacts_verified": true
+      }
+    ],
+    "key_file_committed": false
+  },
+  "gate_refs": {
+    "secret_scan_four_scopes": "PASS",
+    "c8_idempotency": "PASS"
+  },
+  "notes": [
+    "work/ 被 .gitignore 忽略，本目录为其可入库选摘。",
+    "c8/key.txt 为幂等键原文，未入库。",
+    "运行日志范围限定为本轮基线证据目录与 C8 作业目录，不覆盖整个 work/。",
+    "C8 请求 mode=e11-a，仅两阶段，不构成五阶段路径验证。"
+  ]
+}
