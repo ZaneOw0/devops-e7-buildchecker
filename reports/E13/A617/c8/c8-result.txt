@@ -1,0 +1,21 @@
+请求输入（对方项目 B）: {"mode": "e11-a", "repo": "/course/data/real-project", "base": "0b62c79a6adb4cd913a814068074575afdbbd18b", "target": "745ecf2621c8221b97bf0a5435ace50150ef57d4"}
+
+--- 情形1 同键同输入 #1（应 202 + 新建） ---
+HTTP 202 | job_id = job-c7dba69cc8ed4fbaac285432745ea28a | status = QUEUED
+
+--- 情形2 同键同输入 #2（应 202 + 同一 job_id） ---
+HTTP 202 | job_id = job-c7dba69cc8ed4fbaac285432745ea28a | status = RUNNING
+
+--- 情形3 同键不同输入（应 409 IDEMPOTENCY_CONFLICT） ---
+HTTP 409 | body = {"error": "IDEMPOTENCY_CONFLICT"}
+
+--- 情形4 换键同输入（应 202 + 不同 job_id） ---
+HTTP 202 | job_id = job-8b364b7e8e6543f4890f7a76ffadf139 | status = QUEUED
+
+--- 任务列表取证：GET 两个 job ---
+KEY_REUSED GET 200 | {"schema_version": "e11e12-1", "job_id": "job-c7dba69cc8ed4fbaac285432745ea28a", "status": "RUNNING", "idempotency_key": "c8-241880617-20261120000213", "request_hash": "80c3ef1fc00f655565ef648eb903165
+KEY_CHANGED GET 200 | {"schema_version": "e11e12-1", "job_id": "job-8b364b7e8e6543f4890f7a76ffadf139", "status": "QUEUED", "idempotency_key": "c8-241880617-20261120000213-b", "request_hash": "80c3ef1fc00f655565ef648eb90316
+
+C8_IDEMPOTENCY=PASS
+KEY_REUSED_JOB = job-c7dba69cc8ed4fbaac285432745ea28a
+KEY_CHANGED_JOB= job-8b364b7e8e6543f4890f7a76ffadf139
