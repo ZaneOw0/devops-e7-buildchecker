@@ -11,9 +11,10 @@ B 项目仍是 E12 B1 交接包：base `0b62c79a6adb4cd913a814068074575afdbbd18b
 - job `job-33ddc3e1eaea4414ae93291a97cb4ac8` / trace `trace-919a053e37b64c5ba4ab378bd64a5123`
 - 发现：仅 `MISSING helper.o → output_format.h`
 - 本目录 `incremental-check.json`、`result.json` 与 `fixed-md-input.json`（由 `labs/e13e14/handoff_a_to_b.py` 生成）
+- 增量产物也入库：`incremental-report.json`、`target-full/findings.json`（与 `incremental-check.json` 里登记的 sha256 一致）
 - tar sha256：`23c527063448c0b96730569c5c2cc32ed2dbf1ec4cac4e85acbefd88c41331d0`
 
-B 组消费时请核对本目录 `incremental-check.json` 的 sha256，并用 `fixed-md-input.json` 的 `source_report` 对照 job/trace。
+B 组消费时请核对本目录 `incremental-check.json` 的 sha256，并用 `fixed-md-input.json` 的 `source_report` 对照 job/trace。完整 `work/` 仍以 tar 为准；只复核交接器时不必解 tar，可用下面的命令。
 
 ## C2 错误 target 与旧报告
 
@@ -33,5 +34,6 @@ B 组消费时请核对本目录 `incremental-check.json` 的 sha256，并用 `f
 
 ```bash
 (cd reports/E13/A353 && sha256sum -c SHA256SUMS)
-python3 labs/e13e14/handoff_a_to_b.py --a-result work/e13-c1-b-01/result.json --target-sha 745ecf2621c8221b97bf0a5435ace50150ef57d4 --out /tmp/e13-a353-handoff-recheck.json
+python3 labs/e13e14/handoff_a_to_b.py --a-result reports/E13/A353/result.json --target-sha 745ecf2621c8221b97bf0a5435ace50150ef57d4 --out /tmp/e13-a353-handoff-recheck.json
+# 期望 HANDOFF_READY sha256=75a29263c245588c517073d0aa231bba51b5ed5287f1f1c9c5a8ee27e99c523d
 ```
