@@ -91,5 +91,14 @@ class StudentE13Scanner241880617(unittest.TestCase):
         self.assertNotIn(sample, output, 'scanner must mask the value')
         self.assertNotIn(other, output, 'scanner must mask the value')
 
+    def test_unquoted_password_with_code_like_suffix_is_reported(self):
+        sample = '2026-demo(' + 'value)42'
+        self.write('runtime.log', 'pass' + 'word = %s\n' % sample)
+        code, output = scan(self.root)
+        self.assertEqual(code, 1, output)
+        self.assertEqual(hits(output), 1, output)
+        self.assertNotIn(sample, output, 'scanner must mask the value')
+
+
 if __name__ == '__main__':
     unittest.main()
