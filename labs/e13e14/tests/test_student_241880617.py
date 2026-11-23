@@ -77,5 +77,19 @@ class StudentE13Scanner241880617(unittest.TestCase):
         self.assertEqual(hits(output), 0, output)
 
 
+    def test_quoted_password_with_punctuation_is_reported(self):
+        sample = 'Tr0ub4dor(' + '2024!x'
+        other = 'p@ss(word)' + '2024'
+        self.write('runtime.log', '\n'.join([
+            'draft timeout while writing pass' + 'word = "%s"' % sample,
+            'db_pass' + 'word = "%s"' % other,
+            '',
+        ]))
+        code, output = scan(self.root)
+        self.assertEqual(code, 1, output)
+        self.assertEqual(hits(output), 2, output)
+        self.assertNotIn(sample, output, 'scanner must mask the value')
+        self.assertNotIn(other, output, 'scanner must mask the value')
+
 if __name__ == '__main__':
     unittest.main()

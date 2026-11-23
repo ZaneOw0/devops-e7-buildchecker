@@ -19,6 +19,9 @@ PATTERNS = (
     ("secret assignment", re.compile(r"(?i)\b[\w.-]*(?:api[_-]?key|secret|token|passw(?:or)?d)\b\s*[:=]\s*[\"']?([^\s\"'#,;]{12,})")),
 )
 PLACEHOLDER = re.compile(r"(?i)replace|your[_-]|example|changeme|xxxx|<[^>]*>|\$\{|\$\(|\*\*\*")
+# Unquoted C expressions: take-address or cast prefix, function call,
+# array element. A quoted value is never treated as code.
+CODE_EXPR = re.compile(r"^[&(]|[A-Za-z_]\w*\s*[\(\[]")
 
 
 def candidates(root: Path):
@@ -60,10 +63,14 @@ def main(argv=None) -> int:
                             for match in pattern.finditer(line):
                                 value = match.group(match.lastindex or 0)
                                 if name == "secret assignment":
-                                    # Parser source may assign a token pointer from a
-                                    # function call or array. That is code, not a
-                                    # hard-coded credential.
-                                    if PLACEHOLDER.search(value) or value.startswith("&") or "(" in value or "[" in value:
+                                    # Parser source may assign a token pointer from a function call, a
+                                    # take-address expression or an array element. That is code, not a
+                                    # hard-coded credential. The exclusion applies only to unquoted values,
+                                    # so a quoted password that contains punctuation is still reported.
+                                    quoted = match.start(1) > 0 and line[match.start(1) - 1] in "\"'"
+                                    if PLACEHOLDER.search(value):
+                                        continue
+                                    if not quoted and CODE_EXPR.search(value):
                                         continue
                                 print(f"FOUND {path}:{lineno} {name} {mask(value)}")
                                 hits += 1
