@@ -1,0 +1,63 @@
+Code under test: 5960ecec817c64a11914eb85ec710ae9408a6bc9
+a05-project.bundle: OK
+candidate.Dockerfile: OK
+request-e12.json: OK
+request-e11-a.json: OK
+MANIFEST.json: OK
+README.md: OK
+c2-result.json: OK
+c7-fail-result.json: OK
+c7-ok-result.json: OK
+fixed-md-input.json: OK
+incremental-check.json: OK
+MANIFEST.json: OK
+README.md: OK
+requests/c1-e11-a.json: OK
+requests/c2-wrong-target.json: OK
+requests/c7-bad-base.json: OK
+requests/e12-tuna-353.json: OK
+result.json: OK
+stale-incremental-check.json: OK
+c6/after.sha256: OK
+c6/before.sha256: OK
+c6/clean-scan.txt: OK
+c6/hit-scan.txt: OK
+c6/probe.log: OK
+c6/scan-image.txt: OK
+c6/scan-runtime-baseline.txt: OK
+c6/scan-runtime-c8.txt: OK
+c6/scan-workspace-history.txt: OK
+c8/c8-result.txt: OK
+c8/jobs-after.txt: OK
+c8/jobs-before.txt: OK
+README.md: OK
+MANIFEST.json: OK
+job job-33ddc3e1eaea4414ae93291a97cb4ac8 trace trace-919a053e37b64c5ba4ab378bd64a5123 report d543f4ccef7666fe95ac8c79e9f8c9b2d2f284b44fd5e2b78b4d22f748ebdf69
+wrong-target REJECTED A task belongs to another target commit
+stale REJECTED Incremental report identity or target mismatch
+changed-bytes REJECTED Artifact hash or size mismatch: incremental-check.json
+runtime log scan: text_files=7 hits=0 errors=0
+23c527063448c0b96730569c5c2cc32ed2dbf1ec4cac4e85acbefd88c41331d0
+75a29263c245588c517073d0aa231bba51b5ed5287f1f1c9c5a8ee27e99c523d
+test_changed_inner_artifact_is_rejected (test_handoff.HandoffTests) ... ok
+test_live_a_report_becomes_b_input_with_provenance (test_handoff.HandoffTests) ... ok
+test_other_target_is_rejected (test_handoff.HandoffTests) ... ok
+test_c2_stale_base_commit_report_is_rejected (test_student_241880353.StudentE13Handoff241880353) ... ok
+test_c2_wrong_target_request_is_rejected (test_student_241880353.StudentE13Handoff241880353) ... ok
+test_live_c1_report_keeps_job_and_artifact_sha (test_student_241880353.StudentE13Handoff241880353) ... ok
+test_clean_copy_passes (test_student_241880617.StudentE13Scanner241880617) ... ok
+test_parser_assignments_are_not_reported (test_student_241880617.StudentE13Scanner241880617) ... ok
+test_placeholder_assignment_is_still_excluded (test_student_241880617.StudentE13Scanner241880617) ... ok
+test_quoted_password_with_punctuation_is_reported (test_student_241880617.StudentE13Scanner241880617) ... ok
+test_real_key_is_still_reported (test_student_241880617.StudentE13Scanner241880617) ... ok
+test_unquoted_password_with_code_like_suffix_is_reported (test_student_241880617.StudentE13Scanner241880617) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.130s
+
+OK
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.180s
+
+OK
