@@ -31,6 +31,8 @@ PR #23 已将 C1 两个内层产物纳入 A353 目录。106 在 `3ce7943` 上核
 
 ## 交接给 E14
 
+- [PR #26](https://github.com/ZaneOw0/devops-e7-buildchecker/pull/26) 已合入 main。A 组 E14 正式候选提交为 `68c5454914b48ee2482fb17cd101ff8b8ee854ce`。106 已核对该提交与门禁判定提交 `1f6ef6b` 的文件差异，只有 `reports/E13/cross-test-record.md`。617 据此重建镜像。
+
 - H1–H3 已由 617 执行并提交结果摘要。教师对 A 组目标提交的独立隐藏测试反馈【无当次回执】。
 
 - 106 已验收 #15、#17、#19 的修复。`3ce7943` 上四个 push 工作流通过。#16、#20 缺少合并前独立审查。#20 有 353 的合并后独立复核。该组级签收记录待非作者审查。[集成提交](https://github.com/ZaneOw0/devops-e7-buildchecker/commit/3ce79430e07f3b462b7791c39f8c11dd3ae90659)
