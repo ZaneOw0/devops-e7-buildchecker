@@ -1,11 +1,37 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "kind": "E14-four-service-evidence",
   "student": "241880617",
   "group": "A05",
   "candidate_commit": "68c5454914b48ee2482fb17cd101ff8b8ee854ce",
   "candidate_source": "PR #26 merge commit on main (2026-11-24T10:56:49Z)",
   "gate_decision_commit": "1f6ef6b",
+  "gate_decision_tree_diff": {
+    "command": "git diff --stat 1f6ef6b 68c5454",
+    "files": ["reports/E13/cross-test-record.md"],
+    "insertions": 7,
+    "deletions": 3
+  },
+  "review_revision": {
+    "reviewer": "241880106",
+    "submitted_at": "2026-11-24T11:25:20Z",
+    "state": "CHANGES_REQUESTED",
+    "items": [
+      {
+        "issue": "fault 与 recover 两份请求同时改变 candidate 与 build_timeout，不能登记为单变量恢复",
+        "handling": "拆为组 1 / 组 2；组 1 改登记为「超时后切换到已验收候选，新任务恢复成功」；新增组 2（fault-single、recover-single）补出仅 timeout 变化的单变量证据"
+      },
+      {
+        "issue": "SHA256SUMS 范围应写为选摘归档",
+        "handling": "见 archive_scope 字段与 README 第八节"
+      },
+      {
+        "issue": "repair.json 没有 input_report.sha256 字段",
+        "handling": "见 checks.independently_checkable 四项，删除超范围表述"
+      }
+    ]
+  },
+  "archive_scope": "选摘归档（摘录，非全量）：仅收录判定所需产物；data/ 与 work/ 中被 .gitignore 忽略的原始文件不在 SHA256SUMS 覆盖范围。SHA256SUMS 只证明归档内文件自归档之日起未被改动，不能推断归档等于全部原始产物。",
   "image": {
     "tag": "course-e11e12:241880617",
     "id": "sha256:9b19710406eb6e2d35454fb36889e3da8fd163ac82a9f035418bcd605c4cd134",
@@ -17,7 +43,7 @@
     "file": "labs/e13e14/compose.yaml",
     "project": "e14-241880617",
     "roles": ["buildchecker", "echecker", "draft", "mdfixer"],
-    "health": "4/4 healthy",
+    "health": "4/4 healthy（两批均如此）",
     "ports": ["127.0.0.1:18081", "127.0.0.1:18082", "127.0.0.1:18083", "127.0.0.1:18084"]
   },
   "runs": [
@@ -68,8 +94,9 @@
     },
     {
       "dir": "recover",
-      "kind": "post-fault-retry",
+      "kind": "post-fault-retry-after-candidate-switch",
       "request": "data/e14-sample-tuna.json",
+      "variable_note": "与 fault 相比同时改变了 candidate 与 build_timeout，属于双变量对照",
       "base": "d77b4d866686693ce7540ad7ffbe8c51f7dc742e",
       "target": "0319556923b4e4522a41c1468d9c929c92d60e08",
       "job_id": "job-25293e0821aa42b796222fd82c751161",
@@ -80,27 +107,85 @@
       "artifact_mismatch": 0,
       "patch_sha256": "88074f66c291dcad1344c48f6a2b9ddd42d235d9d0415c85fb33310c5b7cb2af",
       "report_sha256": "c7172a7a1d2b034cec012fbee9e2c7a3ae603f970369573fa40177b8b6c7ba38"
+    },
+    {
+      "dir": "recover-single",
+      "kind": "post-fault-retry-single-variable",
+      "request": "data/e14-sample-tuna.json",
+      "variable_note": "与 fault-single 相比只恢复 build_timeout，candidate 完全相同，属于单变量对照",
+      "base": "d77b4d866686693ce7540ad7ffbe8c51f7dc742e",
+      "target": "0319556923b4e4522a41c1468d9c929c92d60e08",
+      "job_id": "job-72190418df5c47b6a67eba846f79764e",
+      "trace_id": "trace-8a9a8d9e1818435fb2ed696b6aa1b79e",
+      "status": "SUCCEEDED",
+      "stages": ["draft", "full-check", "incremental-check", "repair", "recheck"],
+      "artifacts": 162,
+      "artifact_mismatch": 0,
+      "patch_sha256": "88074f66c291dcad1344c48f6a2b9ddd42d235d9d0415c85fb33310c5b7cb2af",
+      "report_sha256": "bb455d8cd6d449a39f53d15430df447b6281e8333d083a57d845f0003e860bd4"
     }
   ],
   "fault_injection": {
-    "dir": "fault",
-    "request": "data/e14-fault-request.json",
-    "override": {"build_timeout": 0.01},
-    "job_id": "job-d223d409fae0451ab327ea7ebc758a5c",
-    "trace_id": "trace-0dabc6a25a7948dcb7b25b10c426c276",
-    "status": "FAILED",
-    "stages": [],
-    "orchestrate_exit_code": 1,
-    "error": "DRAFT_TIMED_OUT: Docker client command exceeded 0.01s",
-    "recovery_dir": "recover",
-    "recovery_status": "SUCCEEDED",
+    "groups": [
+      {
+        "group": 1,
+        "dirs": ["fault", "recover"],
+        "variables_changed": ["candidate", "build_timeout"],
+        "candidate": {
+          "fault": "/course/data/integration-sample/candidate.Dockerfile（教师原候选）",
+          "recover": "/course/data/candidate-tuna.Dockerfile"
+        },
+        "build_timeout": {"fault": 0.01, "recover": 1800},
+        "job_id": {
+          "fault": "job-d223d409fae0451ab327ea7ebc758a5c",
+          "recover": "job-25293e0821aa42b796222fd82c751161"
+        },
+        "status": {"fault": "FAILED", "recover": "SUCCEEDED"},
+        "orchestrate_exit_code": {"fault": 1, "recover": 0},
+        "error": "DRAFT_TIMED_OUT: Docker client command exceeded 0.01s",
+        "claim": "超时后切换到已验收候选，新任务恢复成功",
+        "limits": "同时改变 candidate 与 build_timeout 两项，不能登记为单变量恢复"
+      },
+      {
+        "group": 2,
+        "dirs": ["fault-single", "recover-single"],
+        "variables_changed": ["build_timeout"],
+        "candidate": {
+          "fault": "/course/data/candidate-tuna.Dockerfile",
+          "recover": "/course/data/candidate-tuna.Dockerfile"
+        },
+        "build_timeout": {"fault": 0.01, "recover": 1800},
+        "request": {
+          "fault": "data/e14-fault-tuna.json（由 data/e14-sample-tuna.json 派生，仅改 build_timeout）",
+          "recover": "data/e14-sample-tuna.json（原文件、未修改）"
+        },
+        "request_diff": {"build_timeout": [0.01, 1800]},
+        "only_timeout_differs": true,
+        "job_id": {
+          "fault": "job-10410e9704674cb4b81f83325564147d",
+          "recover": "job-72190418df5c47b6a67eba846f79764e"
+        },
+        "trace_id": {
+          "fault": "trace-e91ac9dede26487987d3e76d03d475a0",
+          "recover": "trace-8a9a8d9e1818435fb2ed696b6aa1b79e"
+        },
+        "status": {"fault": "FAILED", "recover": "SUCCEEDED"},
+        "orchestrate_exit_code": {"fault": 1, "recover": 0},
+        "error": "DRAFT_TIMED_OUT: Docker client command exceeded 0.01s",
+        "stage_files_absent_on_fault": ["draft", "full-check", "incremental-check", "repair", "recheck"],
+        "recover_artifacts": {"checked": 162, "mismatch": 0},
+        "claim": "手册要求的单变量故障恢复：候选不变，仅恢复时限后原请求重试成功",
+        "limits": "无（仅一个变量变化）"
+      }
+    ],
     "residual_containers": "none",
-    "residual_processes": "2 x [docker-buildx] <defunct> (已退出，父进程 dockerd 回收)"
+    "residual_processes": "2 x [docker-buildx] <defunct>（已退出，父进程 dockerd 回收）"
   },
   "network_blocked_attempt": {
     "dir": "baseline-failure",
     "request": "data/integration-sample/e12.json",
     "candidate": "/course/data/integration-sample/candidate.Dockerfile",
+    "build_timeout": 600,
     "job_id": "job-2e02e91c2bec4a569c70a2e7f4f8cfcb",
     "status": "FAILED",
     "error": "DRAFT_TIMED_OUT: Docker client command exceeded 600.0s",
@@ -109,18 +194,53 @@
   },
   "checks": {
     "stages_shared_job_trace": true,
-    "report_sha_traceable": true,
+    "incremental_report_sha_matches": true,
     "patch_sha_and_validation": true,
+    "repair_has_input_report_field": false,
+    "independently_checkable": [
+      "incremental-check.data.sha256 vs incremental/incremental-check.json 实算",
+      "五阶段 job_id/trace_id vs result.json",
+      "repair.data.sha256 vs repair-work/candidate.patch 实算",
+      "repair.data.validation.accepted 与 checks 五项"
+    ],
     "recheck_target_and_no_missing": true,
-    "artifact_hash_recompute": {"checked": 685, "mismatch": 0},
-    "runtime_log_scan": {"files": 679, "hits": 0, "errors": 0},
-    "services_log": {"lines": 784, "json_entries": 26},
+    "artifact_hash_recompute": {
+      "checked": 847,
+      "mismatch": 0,
+      "breakdown": {"sample": 162, "real-a05": 181, "real-pair": 180, "recover": 162, "recover-single": 162}
+    },
+    "runtime_log_scan": {
+      "files": 868,
+      "hits": 0,
+      "errors": 0,
+      "scans": 9,
+      "detail": {
+        "services.log": 1,
+        "services-02.log": 1,
+        "sample-02": 151,
+        "sample-03": 151,
+        "sample-04": 151,
+        "real-a05-01": 170,
+        "real-pair-01": 169,
+        "fault-02": 37,
+        "fault-03": 37
+      }
+    },
+    "services_log": {
+      "files": [
+        {"path": "services/e14-compose-services.log", "lines": 784, "json_entries": 26, "batch": "第一次 up→down（含 baseline-failure 与组 1 故障）"},
+        {"path": "services/e14-compose-services-02.log", "lines": 68, "json_entries": 7, "batch": "第二次 up→down（含组 2 单变量故障与恢复）"}
+      ]
+    },
     "four_roles_per_job": {
       "job-3f0c37ff14874dd78d775ffd2f5a41a9": {"buildchecker": 3, "echecker": 1, "draft": 1, "mdfixer": 1},
       "job-59c9c4af21d0499ba9aaead8e41fcc20": {"buildchecker": 3, "echecker": 1, "draft": 1, "mdfixer": 1},
       "job-b281badaae9542ce94f76dbd6e72d57a": {"buildchecker": 3, "echecker": 1, "draft": 1, "mdfixer": 1},
       "job-25293e0821aa42b796222fd82c751161": {"buildchecker": 3, "echecker": 1, "draft": 1, "mdfixer": 1},
-      "job-d223d409fae0451ab327ea7ebc758a5c": {"draft": 1}
+      "job-72190418df5c47b6a67eba846f79764e": {"buildchecker": 3, "echecker": 1, "draft": 1, "mdfixer": 1},
+      "job-2e02e91c2bec4a569c70a2e7f4f8cfcb": {"draft": 1},
+      "job-d223d409fae0451ab327ea7ebc758a5c": {"draft": 1},
+      "job-10410e9704674cb4b81f83325564147d": {"draft": 1}
     }
   },
   "teardown": {
@@ -128,6 +248,6 @@
     "scoped_to_project": true,
     "other_groups_untouched": true
   },
-  "generated_at": "2026-11-24T19:20:00+08:00",
-  "generator": "checks/e14_verify.py + 手工核对链路字段"
+  "generated_at": "2026-11-24T19:36:00+08:00",
+  "generator": "checks/e14_verify.py（四次正向 + 组 1）+ checks/e14_verify_single.py（组 2）+ 手工核对链路字段"
 }

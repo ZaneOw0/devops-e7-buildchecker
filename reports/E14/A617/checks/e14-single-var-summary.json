@@ -1,0 +1,67 @@
+{
+ "request_diff": {
+  "build_timeout": [
+   0.01,
+   1800
+  ]
+ },
+ "only_timeout_differs": true,
+ "fault": {
+  "status": "FAILED",
+  "job_id": "job-10410e9704674cb4b81f83325564147d",
+  "trace_id": "trace-e91ac9dede26487987d3e76d03d475a0",
+  "artifact_count": 36,
+  "stage_files_absent": [
+   "draft",
+   "full-check",
+   "incremental-check",
+   "repair",
+   "recheck"
+  ],
+  "error": "draft HTTP 422: {\"status\": \"FAILED\", \"role\": \"draft\", \"error_code\": \"TIMEOUT\", \"error\": \"DRAFT_TIMED_OUT: Docker client command exceeded 0.01s\"}\n",
+  "timed_out": true
+ },
+ "recover": {
+  "status": "SUCCEEDED",
+  "job_id": "job-72190418df5c47b6a67eba846f79764e",
+  "trace_id": "trace-8a9a8d9e1818435fb2ed696b6aa1b79e",
+  "stage_status": {
+   "draft": "SUCCEEDED",
+   "full-check": "SUCCEEDED",
+   "incremental-check": "SUCCEEDED",
+   "repair": "SUCCEEDED",
+   "recheck": "SUCCEEDED"
+  },
+  "all_stages_succeeded": true,
+  "stages_share_job": true,
+  "stages_share_trace": true,
+  "base_commit": "d77b4d866686693ce7540ad7ffbe8c51f7dc742e",
+  "target_commit": "0319556923b4e4522a41c1468d9c929c92d60e08"
+ },
+ "hash_chain": {
+  "incremental_report_sha_matches": true,
+  "incremental_report_sha256": "bb455d8cd6d449a39f53d15430df447b6281e8333d083a57d845f0003e860bd4",
+  "patch_sha_matches": true,
+  "patch_sha256": "88074f66c291dcad1344c48f6a2b9ddd42d235d9d0415c85fb33310c5b7cb2af",
+  "validation_accepted": true,
+  "validation_checks": {
+   "patch_applies": true,
+   "build": true,
+   "test": true,
+   "header_change": true,
+   "no_missing": true
+  },
+  "repair_has_input_report_field": false
+ },
+ "recheck": {
+  "commit_is_target": true,
+  "remaining_missing": 0,
+  "missing_count": 0,
+  "has_missing_finding": false
+ },
+ "artifacts": {
+  "checked": 162,
+  "mismatch": 0,
+  "details": []
+ }
+}
