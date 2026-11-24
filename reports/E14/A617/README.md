@@ -30,11 +30,11 @@
 
 | 目录 | 类型 | base → target | job_id | 五阶段 | 产物 | 补丁 sha256 |
 | --- | --- | --- | --- | --- | --- | --- |
-| `sample/` | 固定样例（镜像源适配候选） | `d77b4d86` → `03195569` | `job-3f0c37ff14874dd78d775ffd2f5a41a9` | 5/5 SUCCEEDED | 162 | `88074f66…bd0e5a` |
+| `sample/` | 固定样例（镜像源适配候选） | `d77b4d86` → `03195569` | `job-3f0c37ff14874dd78d775ffd2f5a41a9` | 5/5 SUCCEEDED | 162 | `88074f66…7cb2af` |
 | `real-a05/` | 真实项目：A05 本组 | `6b9deff5` → `90646db8` | `job-59c9c4af21d0499ba9aaead8e41fcc20` | 5/5 SUCCEEDED | 181 | `0030f288…bef9db` |
 | `real-pair/` | 真实项目：配对侧 | `0b62c79a` → `745ecf26` | `job-b281badaae9542ce94f76dbd6e72d57a` | 5/5 SUCCEEDED | 180 | `a7a3be54…b5142a` |
-| `recover/` | 固定样例重试（`fault/` 之后） | `d77b4d86` → `03195569` | `job-25293e0821aa42b796222fd82c751161` | 5/5 SUCCEEDED | 162 | `88074f66…bd0e5a` |
-| `recover-single/` | 固定样例重试（`fault-single/` 之后，原请求原样） | `d77b4d86` → `03195569` | `job-72190418df5c47b6a67eba846f79764e` | 5/5 SUCCEEDED | 162 | `88074f66…bd0e5a` |
+| `recover/` | 固定样例重试（`fault/` 之后） | `d77b4d86` → `03195569` | `job-25293e0821aa42b796222fd82c751161` | 5/5 SUCCEEDED | 162 | `88074f66…7cb2af` |
+| `recover-single/` | 固定样例重试（`fault-single/` 之后，原请求原样） | `d77b4d86` → `03195569` | `job-72190418df5c47b6a67eba846f79764e` | 5/5 SUCCEEDED | 162 | `88074f66…7cb2af` |
 
 ### 2.2 故障注入与恢复：两组对照
 
@@ -56,7 +56,7 @@
 
 1. `result.json` 为 `SUCCEEDED`，阶段顺序严格为 `draft → full-check → incremental-check → repair → recheck`；
 2. 五个阶段文件各自 `status=SUCCEEDED`，且 `job_id`/`trace_id` 与 `result.json` 完全一致（同一任务贯穿四角色）；
-3. `incremental-check.data.sha256` 与该阶段 report 文件（`incremental/incremental-check.json`）实算 sha256 一致 —— A→B 报告来源可追溯；
+3. `incremental-check.data.sha256` 与该阶段 report 文件（归档内 `report-incremental-check.json`，原始路径 `incremental/incremental-check.json`）实算 sha256 一致 —— A→B 报告来源可追溯；
 4. `repair.data.sha256` 与补丁文件实算一致，`validation.accepted=true`，`checks={patch_applies,build,test,header_change,no_missing}` 全为 `true`；
 5. `recheck.commit` 等于目标提交，`remaining_missing=0`，`findings` 中无 `MISSING`；
 6. `result.json` 登记的全部产物逐项复算 sha256 与字节数：**847 个产物，0 处不符**（162+181+180+162+162）。
@@ -65,7 +65,7 @@
 
 | 核对项 | 字段/文件 | 结果 |
 | --- | --- | --- |
-| 增量报告哈希 | `incremental-check.data.sha256` vs `incremental/incremental-check.json` 实算 | 一致 |
+| 增量报告哈希 | `incremental-check.data.sha256` vs `report-incremental-check.json` 实算 | 一致 |
 | 同轮任务关联 | 五阶段 `job_id` / `trace_id` vs `result.json` | 全部一致 |
 | 补丁哈希 | `repair.data.sha256` vs `repair-work/candidate.patch` 实算 | 一致 |
 | 补丁验收结论 | `repair.data.validation.accepted` + `checks` 五项 | `true` / 五项全 `true` |
@@ -110,7 +110,7 @@
 
 **因此本组不是单变量恢复**，只能登记为：**「超时后切换到已验收候选，新任务恢复成功」**。
 
-事实部分仍然成立：`fault/` 得到 `DRAFT_TIMED_OUT: Docker client command exceeded 0.01s`，外层 `result.json` 为 `FAILED`、`stages=[]`、编排退出码 **1**；`recover/` 在新目录得到 `SUCCEEDED`，job/trace 与故障那次不同（`job-25293e08…` / `trace-c81aef73…`），是干净的新任务。该组证明的是「换用已验收候选后可以跑通」，**不能用于论证仅恢复时限即可恢复**。
+事实部分仍然成立：`fault/` 得到 `DRAFT_TIMED_OUT: Docker client command exceeded 0.01s`，外层 `result.json` 为 `FAILED`、`stages=[]`、编排退出码 **1**（外层 `orchestrate.py` 进程退出码，记于 `console.log`；`result.json` 无 `exit_code` 字段）；`recover/` 在新目录得到 `SUCCEEDED`，job/trace 与故障那次不同（`job-25293e08…` / `trace-c81aef73…`），是干净的新任务。该组证明的是「换用已验收候选后可以跑通」，**不能用于论证仅恢复时限即可恢复**。
 
 ### 5.2 组 2：`fault-single/` → `recover-single/`（仅改变 build_timeout，手册要求的单变量恢复）
 
@@ -131,7 +131,7 @@
 2. **恢复**：用**同一个请求文件原样**（未改任何字段）在全新目录 `recover-single` 重试 → `SUCCEEDED`，五阶段 `draft/full-check/incremental-check/repair/recheck` 全部 `SUCCEEDED`，五阶段共享同一 job/trace。
 3. **干净性**：故障与恢复的 job_id、trace_id 各不相同，说明恢复是全新任务，不是复用故障现场。
 4. **判据核对**（`checks/e14_verify_single.py`）：报告哈希一致、补丁哈希一致、`validation` 五项全 `true`、`recheck.commit` 等于 target、`remaining_missing=0`、**162 个产物逐个复算 sha256+bytes 0 处不符**。
-5. **确定性旁证**：`recover-single` 的补丁 sha256 与 `sample/`、`recover/` 相同（`88074f66…bd0e5a`），同一 fixture 的修复逻辑稳定复现。三份 `report_sha256` 不同属正常：报告内容含 job_id、trace_id 等任务元数据。
+5. **确定性旁证**：`recover-single` 的补丁 sha256 与 `sample/`、`recover/` 相同（`88074f66…7cb2af`），同一 fixture 的修复逻辑稳定复现。三份 `report_sha256` 不同属正常：报告内容含 job_id、trace_id 等任务元数据。
 
 ### 5.3 收尾与残留
 
