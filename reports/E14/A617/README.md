@@ -1,8 +1,10 @@
 # E14 四容器正式验收证据（241880617 / A05）
 
-## 修订记录（按 PR #27 审核意见）
+## 修订记录
 
-241880106 于 2026-11-24T11:25:20Z 给出 `CHANGES_REQUESTED`，三条意见与处理如下：
+### 按 PR #27 审核意见（2026-11-24T11:25:20Z）
+
+241880106 给出 `CHANGES_REQUESTED`，三条意见与处理如下：
 
 | 审核意见 | 本次处理 |
 | --- | --- |
@@ -11,6 +13,17 @@
 | `repair.json` 没有 `input_report.sha256` 字段 | 第三节新增「哈希链的可核对范围」，列出归档内可独立核对的四项，删除原先的超范围表述 |
 
 另：第一节「M 与判定提交的差异」原为无凭证断言，现补实测 `git diff --stat 1f6ef6b 68c5454`（仅 `cross-test-record.md`，+7 −3）。
+
+### 按 PR #30 复审意见（2026-11-24T12:56:10Z）
+
+241880106 复核 `fcdada0`（清单 76 项全匹配、三份固定样例补丁 sha256 尾六位均为 `7cb2af`、10 条 CI 通过）后另给 `CHANGES_REQUESTED`，两条意见与处理如下：
+
+| 复审意见 | 本次处理 |
+| --- | --- |
+| 把数字退出码 1 归于 `console.log` 不准确：三个失败目录的完整控制台日志只有 `status` / `job_id` / `stages` / `error`，未保存 shell 退出码 | 第 113 行改写为「执行人在终端记录到的外层编排退出码，未随归档落盘」，并明确归档可核验的是 `status=FAILED`、`stages=[]` 与 `DRAFT_TIMED_OUT` 正文，退出码本身不作为归档判据 |
+| 运行次数与目录数不自洽（个人报告表列 8 个目录、正文写「七次」）；故障/恢复行的 `base → target` 不应写「同上」 | 个人报告 §4.4 / §6 / §9 统一为「7 次正式运行（5 次成功 + 2 次受控故障注入）+ 1 次基线失败留证 = 8 次，5 成功 3 失败」；§4.4 表内固定样例各行直接写 `d77b4d86 → 03195569` |
+
+本次只修正文档并同步 `SHA256SUMS` 的 `README.md` 条目，未重跑四容器，判据与产物数量不变。
 
 ## 一、验收对象
 
@@ -110,7 +123,7 @@
 
 **因此本组不是单变量恢复**，只能登记为：**「超时后切换到已验收候选，新任务恢复成功」**。
 
-事实部分仍然成立：`fault/` 得到 `DRAFT_TIMED_OUT: Docker client command exceeded 0.01s`，外层 `result.json` 为 `FAILED`、`stages=[]`、编排退出码 **1**（外层 `orchestrate.py` 进程退出码，记于 `console.log`；`result.json` 无 `exit_code` 字段）；`recover/` 在新目录得到 `SUCCEEDED`，job/trace 与故障那次不同（`job-25293e08…` / `trace-c81aef73…`），是干净的新任务。该组证明的是「换用已验收候选后可以跑通」，**不能用于论证仅恢复时限即可恢复**。
+事实部分仍然成立：`fault/` 得到 `DRAFT_TIMED_OUT: Docker client command exceeded 0.01s`，外层 `result.json` 为 `FAILED`、`stages=[]`、编排退出码 **1**（执行人在终端记录到的外层 `orchestrate.py` 进程退出码，**未随归档落盘**；归档内 `result.json` 无 `exit_code` 字段，各 `*-console.log` 也只有 `status` / `job_id` / `stages` / `error` 四项——可核验的是 `status=FAILED` 与 `DRAFT_TIMED_OUT` 正文，退出码本身不作为归档判据）；`recover/` 在新目录得到 `SUCCEEDED`，job/trace 与故障那次不同（`job-25293e08…` / `trace-c81aef73…`），是干净的新任务。该组证明的是「换用已验收候选后可以跑通」，**不能用于论证仅恢复时限即可恢复**。
 
 ### 5.2 组 2：`fault-single/` → `recover-single/`（仅改变 build_timeout，手册要求的单变量恢复）
 
