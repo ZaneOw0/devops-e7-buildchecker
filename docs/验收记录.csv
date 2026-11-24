@@ -16,3 +16,8 @@ A04,A,E12,五阶段（固定样例与真实项目）,PASS,docs/students/24188061
 A05,A,E12,任务API契约与跨机SSH转发,PASS,docs/students/241880106/e11-e12/xmachine/run-01/summary.json,ssh -L 18081→127.0.0.1:8081；202/同键同job/409冲突/404越界/重启后可查；四份产物三方哈希一致
 A06,A,E11-E12,新增适配与契约测试,PASS,labs/e11e12/test_student_241880353.py;labs/e11e12/test_student_241880617.py;labs/e11e12/vendor/draft/autobuild.py,run_e11e12.py test 共19项OK；pinned FROM校验修复；经PR #10 #12合入
 B04,B,E11-E12,DRAFT→MDFixer及B侧五阶段,N/A,https://github.com/Rowan-hhh/devops-e4-draft/tree/e11-e12-integration/reports/E12,B组仓库交付（PR #22–#25）；A组提供增量报告
+A07,A,E13,T3 C6 密钥扫描,PASS,reports/E13/A617/c6/;reports/E13/cross-test-record.md,覆盖工作区、历史、镜像、运行日志。假值注入退出 1，清理后退出 0。
+A08,A,E13,T3 C8 API 幂等,PASS,reports/E13/A617/c8/;reports/E13/cross-test-record.md,同键同输入复用任务，同键异输入返回 409，换键创建新任务。
+C08,共同,E13,T3–T5 交叉测试、缺陷闭环与门禁,PASS,reports/E13/cross-test-record.md;https://github.com/ZaneOw0/devops-e7-buildchecker/pull/26,106 判定 1f6ef6b。三个教师项目五阶段成功。配对方当次缺项见签收表的【无当次回执】。
+C09,共同,E14,T6 四容器正式验收,PASS,reports/E14/A617/MANIFEST.json;reports/E14/A617/SHA256SUMS,617 执行、353 复核。5 次成功、3 次失败留证，847 项登记产物，归档 76/76，单变量超时恢复通过。
+C10,共同,E14,T7 A 侧候选发布,PASS,reports/E14/v0.9-rc-release-notes.md;https://github.com/ZaneOw0/devops-e7-buildchecker/tree/v0.9-rc,106 在已验收提交 68c5454 创建 v0.9-rc，证据归档 53b97e3。CLI 三组作为预验证。
