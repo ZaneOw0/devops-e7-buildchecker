@@ -1,0 +1,784 @@
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:58:59] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:59:04] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:59:10] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:59:15] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:59:20] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:59:26] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:59:31] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:59:36] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:59:41] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:59:47] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:59:52] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 10:59:57] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:00:03] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:00:08] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:00:13] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:00:19] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:00:24] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:00:29] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:00:34] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:00:40] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:00:45] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:00:50] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:00:56] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:01] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:06] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:11] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:17] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:22] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:27] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:33] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:38] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:43] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:49] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:54] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:01:59] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:02:05] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:02:10] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:02:15] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:02:20] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:02:26] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:02:31] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:02:36] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:02:42] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:02:47] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:02:52] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:02:58] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:03:03] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:03:08] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:03:13] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:03:19] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:03:24] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:03:29] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:03:35] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:03:40] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:03:45] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:03:51] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:03:56] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:04:01] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:04:07] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:04:12] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:04:18] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:04:23] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:04:28] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:04:34] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:04:39] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:04:44] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:04:50] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:04:55] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:00] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:05] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:10] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:16] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:21] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:26] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:31] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:37] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:42] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:47] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:52] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:05:57] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:06:03] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:06:08] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:06:13] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:06:18] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:06:23] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:06:29] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:06:34] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:06:39] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:06:44] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:06:50] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:06:55] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:00] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:05] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:10] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:16] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:21] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:26] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:31] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:36] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:42] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:47] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:52] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:07:57] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:08:02] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:08:08] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:08:13] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:08:18] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:08:23] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:08:28] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:08:34] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:08:39] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:08:44] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:08:49] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:08:54] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:00] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:05] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:10] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:15] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:21] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:26] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:31] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:36] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:41] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:47] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:52] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:09:57] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:10:02] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:10:08] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:10:13] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:10:18] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:10:23] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:10:29] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:10:34] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:10:39] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:10:45] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:10:50] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:10:55] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:00] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:06] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:11] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:16] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:22] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:27] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:32] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:37] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:43] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:48] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:53] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:11:59] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:12:04] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:12:09] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:12:15] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | {"role": "mdfixer", "job_id": "job-3f0c37ff14874dd78d775ffd2f5a41a9", "trace_id": "trace-2ca3ddc7835f4baebfdf2261e589b21c", "status": "SUCCEEDED", "elapsed_ms": 1193}
+mdfixer-1  | 172.19.0.1 - - [24/Nov/2026 11:12:17] "POST /v1/run HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:12:20] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:12:25] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | {"role": "mdfixer", "job_id": "job-59c9c4af21d0499ba9aaead8e41fcc20", "trace_id": "trace-8e64b9bbd0da4d6eb2499a47fce8d3b5", "status": "SUCCEEDED", "elapsed_ms": 1135}
+mdfixer-1  | 172.19.0.1 - - [24/Nov/2026 11:12:27] "POST /v1/run HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:12:30] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | {"role": "mdfixer", "job_id": "job-b281badaae9542ce94f76dbd6e72d57a", "trace_id": "trace-ba5e3b3c7efd479ca97ac016187e0ac2", "status": "SUCCEEDED", "elapsed_ms": 1131}
+mdfixer-1  | 172.19.0.1 - - [24/Nov/2026 11:12:34] "POST /v1/run HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:12:36] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:12:41] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:12:46] "GET /health HTTP/1.1" 200 -
+mdfixer-1  | {"role": "mdfixer", "job_id": "job-25293e0821aa42b796222fd82c751161", "trace_id": "trace-c81aef7389ed449e8876b98f0ff67306", "status": "SUCCEEDED", "elapsed_ms": 1134}
+mdfixer-1  | 172.19.0.1 - - [24/Nov/2026 11:12:49] "POST /v1/run HTTP/1.1" 200 -
+mdfixer-1  | 127.0.0.1 - - [24/Nov/2026 11:12:51] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:58:58] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:04] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:09] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:14] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:20] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:25] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:30] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:35] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:40] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:46] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:51] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:56] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:01] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:06] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:12] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:17] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:22] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:27] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:32] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:38] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:43] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:48] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:53] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:58] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:04] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:09] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:14] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:19] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:25] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:30] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:35] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:40] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:45] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:51] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:56] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:01] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:06] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:12] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:17] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:22] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:27] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:32] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:38] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:43] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:48] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:53] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:58] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:04] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:09] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:14] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:19] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:24] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:30] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:35] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:40] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:45] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:51] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:56] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:01] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:07] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:12] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:18] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:23] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:28] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:34] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:39] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:44] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:50] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:55] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:00] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:06] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:11] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:16] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:22] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:27] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:32] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:37] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:43] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:48] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:53] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:58] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:04] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:09] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:14] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:19] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:25] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:30] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:35] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:41] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:46] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:51] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:56] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:02] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:07] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:12] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:18] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:23] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:28] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:33] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:39] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:44] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:49] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:55] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:00] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:05] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:11] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:16] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:21] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:27] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:32] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:37] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:42] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:48] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:53] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:58] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:04] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:09] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:14] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:20] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:25] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:30] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:35] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:41] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:46] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:51] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:57] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:02] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:07] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:13] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:18] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:23] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:28] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:33] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:39] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:44] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:49] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:54] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:00] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:05] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:10] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:15] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:20] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:26] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:31] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:36] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:41] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:46] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:52] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:57] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:02] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:07] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:12] "GET /health HTTP/1.1" 200 -
+echecker-1  | {"role": "echecker", "job_id": "job-3f0c37ff14874dd78d775ffd2f5a41a9", "trace_id": "trace-2ca3ddc7835f4baebfdf2261e589b21c", "status": "SUCCEEDED", "elapsed_ms": 37}
+echecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:16] "POST /v1/run HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:18] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:23] "GET /health HTTP/1.1" 200 -
+echecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:26] "POST /v1/run HTTP/1.1" 200 -
+echecker-1  | {"role": "echecker", "job_id": "job-59c9c4af21d0499ba9aaead8e41fcc20", "trace_id": "trace-8e64b9bbd0da4d6eb2499a47fce8d3b5", "status": "SUCCEEDED", "elapsed_ms": 23}
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:28] "GET /health HTTP/1.1" 200 -
+echecker-1  | {"role": "echecker", "job_id": "job-b281badaae9542ce94f76dbd6e72d57a", "trace_id": "trace-ba5e3b3c7efd479ca97ac016187e0ac2", "status": "SUCCEEDED", "elapsed_ms": 22}
+echecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:33] "POST /v1/run HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:33] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:39] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:44] "GET /health HTTP/1.1" 200 -
+echecker-1  | {"role": "echecker", "job_id": "job-25293e0821aa42b796222fd82c751161", "trace_id": "trace-c81aef7389ed449e8876b98f0ff67306", "status": "SUCCEEDED", "elapsed_ms": 22}
+echecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:47] "POST /v1/run HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:49] "GET /health HTTP/1.1" 200 -
+echecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:54] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:58:59] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:04] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:10] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:15] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:20] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:26] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:31] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:36] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:41] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:47] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:52] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 10:59:57] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:03] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:08] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:13] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:19] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:24] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:29] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:34] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:40] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:45] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:50] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:00:56] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:01] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:06] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:11] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:17] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:22] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:27] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:33] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:38] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:43] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:49] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:54] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:01:59] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:05] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:10] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:15] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:20] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:26] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:31] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:36] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:42] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:47] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:52] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:02:57] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:03] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:08] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:13] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:19] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:24] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:29] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:35] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:40] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:45] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:51] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:03:56] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:01] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:07] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:12] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:18] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:23] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:29] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:34] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:39] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:45] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:50] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:04:55] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:01] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:06] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:11] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:16] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:22] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:27] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:32] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:37] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:43] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:48] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:53] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:05:58] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:04] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:09] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:14] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:20] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:25] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:30] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:35] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:41] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:46] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:51] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:06:56] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:02] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:07] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:12] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:18] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:23] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:28] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:33] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:39] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:44] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:49] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:07:55] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:00] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:05] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:11] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:16] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:21] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:27] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:32] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:37] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:42] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:48] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:53] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:08:58] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:04] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:09] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:14] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:20] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:25] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:30] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:35] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:41] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:46] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:51] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:09:57] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:02] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:07] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:13] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:18] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:23] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:29] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:34] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:39] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:45] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:50] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:10:55] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:00] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:06] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:11] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:16] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:22] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:27] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:32] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:37] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:43] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:48] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:53] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:11:59] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:04] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:09] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:14] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-3f0c37ff14874dd78d775ffd2f5a41a9", "trace_id": "trace-2ca3ddc7835f4baebfdf2261e589b21c", "status": "SUCCEEDED", "elapsed_ms": 129}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:16] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-3f0c37ff14874dd78d775ffd2f5a41a9", "trace_id": "trace-2ca3ddc7835f4baebfdf2261e589b21c", "status": "SUCCEEDED", "elapsed_ms": 134}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:16] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-3f0c37ff14874dd78d775ffd2f5a41a9", "trace_id": "trace-2ca3ddc7835f4baebfdf2261e589b21c", "status": "SUCCEEDED", "elapsed_ms": 135}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:17] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:20] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:25] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-59c9c4af21d0499ba9aaead8e41fcc20", "trace_id": "trace-8e64b9bbd0da4d6eb2499a47fce8d3b5", "status": "SUCCEEDED", "elapsed_ms": 135}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:26] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-59c9c4af21d0499ba9aaead8e41fcc20", "trace_id": "trace-8e64b9bbd0da4d6eb2499a47fce8d3b5", "status": "SUCCEEDED", "elapsed_ms": 128}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:26] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-59c9c4af21d0499ba9aaead8e41fcc20", "trace_id": "trace-8e64b9bbd0da4d6eb2499a47fce8d3b5", "status": "SUCCEEDED", "elapsed_ms": 132}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:27] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:30] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-b281badaae9542ce94f76dbd6e72d57a", "trace_id": "trace-ba5e3b3c7efd479ca97ac016187e0ac2", "status": "SUCCEEDED", "elapsed_ms": 128}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:33] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-b281badaae9542ce94f76dbd6e72d57a", "trace_id": "trace-ba5e3b3c7efd479ca97ac016187e0ac2", "status": "SUCCEEDED", "elapsed_ms": 128}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:33] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-b281badaae9542ce94f76dbd6e72d57a", "trace_id": "trace-ba5e3b3c7efd479ca97ac016187e0ac2", "status": "SUCCEEDED", "elapsed_ms": 128}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:34] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:35] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:40] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:46] "GET /health HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-25293e0821aa42b796222fd82c751161", "trace_id": "trace-c81aef7389ed449e8876b98f0ff67306", "status": "SUCCEEDED", "elapsed_ms": 130}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:47] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-25293e0821aa42b796222fd82c751161", "trace_id": "trace-c81aef7389ed449e8876b98f0ff67306", "status": "SUCCEEDED", "elapsed_ms": 131}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:47] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | {"role": "buildchecker", "job_id": "job-25293e0821aa42b796222fd82c751161", "trace_id": "trace-c81aef7389ed449e8876b98f0ff67306", "status": "SUCCEEDED", "elapsed_ms": 129}
+buildchecker-1  | 172.19.0.1 - - [24/Nov/2026 11:12:49] "POST /v1/run HTTP/1.1" 200 -
+buildchecker-1  | 127.0.0.1 - - [24/Nov/2026 11:12:51] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:58:59] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:59:04] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:59:10] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:59:15] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:59:20] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:59:25] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:59:31] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:59:36] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:59:41] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:59:46] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:59:51] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 10:59:57] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:00:02] "GET /health HTTP/1.1" 200 -
+draft-1         | Traceback (most recent call last):
+draft-1         |   File "/course/labs/e13e14/service.py", line 132, in do_POST
+draft-1         |     result = run(data)
+draft-1         |   File "/course/labs/e13e14/service.py", line 47, in run
+draft-1         |     raise ValueError('DRAFT_' + result['status'] + ': ' + str(result.get('error')))
+draft-1         | ValueError: DRAFT_TIMED_OUT: Docker client command exceeded 600.0s
+draft-1         | {"role": "draft", "job_id": "job-2e02e91c2bec4a569c70a2e7f4f8cfcb", "trace_id": "trace-6ee74d6d467d470393e7b63f3a7822c2", "status": "FAILED", "error_code": "TIMEOUT", "elapsed_ms": 600686}
+draft-1         | 172.19.0.1 - - [24/Nov/2026 11:10:05] "POST /v1/run HTTP/1.1" 422 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:05] "GET /health HTTP/1.1" 200 -
+draft-1         | ----------------------------------------
+draft-1         | Exception occurred during processing of request from ('127.0.0.1', 49870)
+draft-1         | Traceback (most recent call last):
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 318, in _handle_request_noblock
+draft-1         |     self.process_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 349, in process_request
+draft-1         |     self.finish_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 362, in finish_request
+draft-1         |     self.RequestHandlerClass(request, client_address, self)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 766, in __init__
+draft-1         |     self.handle()
+draft-1         |     ~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 447, in handle
+draft-1         |     self.handle_one_request()
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 435, in handle_one_request
+draft-1         |     method()
+draft-1         |     ~~~~~~^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 117, in do_GET
+draft-1         |     self.reply(200, {'status': 'ok', 'role': ROLE})
+draft-1         |     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 113, in reply
+draft-1         |     self.wfile.write(body)
+draft-1         |     ~~~~~~~~~~~~~~~~^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 845, in write
+draft-1         |     self._sock.sendall(b)
+draft-1         |     ~~~~~~~~~~~~~~~~~~^^^
+draft-1         | BrokenPipeError: [Errno 32] Broken pipe
+draft-1         | ----------------------------------------
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:05] "GET /health HTTP/1.1" 200 -
+draft-1         | ----------------------------------------
+draft-1         | Exception occurred during processing of request from ('127.0.0.1', 49918)
+draft-1         | Traceback (most recent call last):
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 318, in _handle_request_noblock
+draft-1         |     self.process_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 349, in process_request
+draft-1         |     self.finish_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 362, in finish_request
+draft-1         |     self.RequestHandlerClass(request, client_address, self)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 766, in __init__
+draft-1         |     self.handle()
+draft-1         |     ~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 447, in handle
+draft-1         |     self.handle_one_request()
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 435, in handle_one_request
+draft-1         |     method()
+draft-1         |     ~~~~~~^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 117, in do_GET
+draft-1         |     self.reply(200, {'status': 'ok', 'role': ROLE})
+draft-1         |     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 113, in reply
+draft-1         |     self.wfile.write(body)
+draft-1         |     ~~~~~~~~~~~~~~~~^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 845, in write
+draft-1         |     self._sock.sendall(b)
+draft-1         |     ~~~~~~~~~~~~~~~~~~^^^
+draft-1         | BrokenPipeError: [Errno 32] Broken pipe
+draft-1         | ----------------------------------------
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:05] "GET /health HTTP/1.1" 200 -
+draft-1         | ----------------------------------------
+draft-1         | Exception occurred during processing of request from ('127.0.0.1', 41954)
+draft-1         | Traceback (most recent call last):
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 318, in _handle_request_noblock
+draft-1         |     self.process_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 349, in process_request
+draft-1         |     self.finish_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 362, in finish_request
+draft-1         |     self.RequestHandlerClass(request, client_address, self)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 766, in __init__
+draft-1         |     self.handle()
+draft-1         |     ~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 447, in handle
+draft-1         |     self.handle_one_request()
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 435, in handle_one_request
+draft-1         |     method()
+draft-1         |     ~~~~~~^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 117, in do_GET
+draft-1         |     self.reply(200, {'status': 'ok', 'role': ROLE})
+draft-1         |     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 113, in reply
+draft-1         |     self.wfile.write(body)
+draft-1         |     ~~~~~~~~~~~~~~~~^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 845, in write
+draft-1         |     self._sock.sendall(b)
+draft-1         |     ~~~~~~~~~~~~~~~~~~^^^
+draft-1         | BrokenPipeError: [Errno 32] Broken pipe
+draft-1         | ----------------------------------------
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:05] "GET /health HTTP/1.1" 200 -
+draft-1         | ----------------------------------------
+draft-1         | Exception occurred during processing of request from ('127.0.0.1', 52686)
+draft-1         | Traceback (most recent call last):
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 318, in _handle_request_noblock
+draft-1         |     self.process_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 349, in process_request
+draft-1         |     self.finish_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 362, in finish_request
+draft-1         |     self.RequestHandlerClass(request, client_address, self)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 766, in __init__
+draft-1         |     self.handle()
+draft-1         |     ~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 447, in handle
+draft-1         |     self.handle_one_request()
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 435, in handle_one_request
+draft-1         |     method()
+draft-1         |     ~~~~~~^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 117, in do_GET
+draft-1         |     self.reply(200, {'status': 'ok', 'role': ROLE})
+draft-1         |     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 113, in reply
+draft-1         |     self.wfile.write(body)
+draft-1         |     ~~~~~~~~~~~~~~~~^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 845, in write
+draft-1         |     self._sock.sendall(b)
+draft-1         |     ~~~~~~~~~~~~~~~~~~^^^
+draft-1         | BrokenPipeError: [Errno 32] Broken pipe
+draft-1         | ----------------------------------------
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:05] "GET /health HTTP/1.1" 200 -
+draft-1         | ----------------------------------------
+draft-1         | Exception occurred during processing of request from ('127.0.0.1', 43942)
+draft-1         | Traceback (most recent call last):
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 318, in _handle_request_noblock
+draft-1         |     self.process_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 349, in process_request
+draft-1         |     self.finish_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 362, in finish_request
+draft-1         |     self.RequestHandlerClass(request, client_address, self)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 766, in __init__
+draft-1         |     self.handle()
+draft-1         |     ~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 447, in handle
+draft-1         |     self.handle_one_request()
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 435, in handle_one_request
+draft-1         |     method()
+draft-1         |     ~~~~~~^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 117, in do_GET
+draft-1         |     self.reply(200, {'status': 'ok', 'role': ROLE})
+draft-1         |     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 113, in reply
+draft-1         |     self.wfile.write(body)
+draft-1         |     ~~~~~~~~~~~~~~~~^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 845, in write
+draft-1         |     self._sock.sendall(b)
+draft-1         |     ~~~~~~~~~~~~~~~~~~^^^
+draft-1         | BrokenPipeError: [Errno 32] Broken pipe
+draft-1         | ----------------------------------------
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:05] "GET /health HTTP/1.1" 200 -
+draft-1         | ----------------------------------------
+draft-1         | Exception occurred during processing of request from ('127.0.0.1', 43998)
+draft-1         | Traceback (most recent call last):
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 318, in _handle_request_noblock
+draft-1         |     self.process_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 349, in process_request
+draft-1         |     self.finish_request(request, client_address)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 362, in finish_request
+draft-1         |     self.RequestHandlerClass(request, client_address, self)
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 766, in __init__
+draft-1         |     self.handle()
+draft-1         |     ~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 447, in handle
+draft-1         |     self.handle_one_request()
+draft-1         |     ~~~~~~~~~~~~~~~~~~~~~~~^^
+draft-1         |   File "/usr/local/lib/python3.13/http/server.py", line 435, in handle_one_request
+draft-1         |     method()
+draft-1         |     ~~~~~~^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 117, in do_GET
+draft-1         |     self.reply(200, {'status': 'ok', 'role': ROLE})
+draft-1         |     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+draft-1         |   File "/course/labs/e13e14/service.py", line 113, in reply
+draft-1         |     self.wfile.write(body)
+draft-1         |     ~~~~~~~~~~~~~~~~^^^^^^
+draft-1         |   File "/usr/local/lib/python3.13/socketserver.py", line 845, in write
+draft-1         |     self._sock.sendall(b)
+draft-1         |     ~~~~~~~~~~~~~~~~~~^^^
+draft-1         | BrokenPipeError: [Errno 32] Broken pipe
+draft-1         | ----------------------------------------
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:09] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:15] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:20] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:25] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:30] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:35] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:41] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:46] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:51] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:10:56] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:01] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:07] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:12] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:17] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:22] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:27] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:33] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:38] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:43] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:48] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:54] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:11:59] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:12:04] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:12:09] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:12:15] "GET /health HTTP/1.1" 200 -
+draft-1         | {"role": "draft", "job_id": "job-3f0c37ff14874dd78d775ffd2f5a41a9", "trace_id": "trace-2ca3ddc7835f4baebfdf2261e589b21c", "status": "SUCCEEDED", "elapsed_ms": 838}
+draft-1         | 172.19.0.1 - - [24/Nov/2026 11:12:16] "POST /v1/run HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:12:20] "GET /health HTTP/1.1" 200 -
+draft-1         | {"role": "draft", "job_id": "job-59c9c4af21d0499ba9aaead8e41fcc20", "trace_id": "trace-8e64b9bbd0da4d6eb2499a47fce8d3b5", "status": "SUCCEEDED", "elapsed_ms": 1080}
+draft-1         | 172.19.0.1 - - [24/Nov/2026 11:12:25] "POST /v1/run HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:12:25] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:12:31] "GET /health HTTP/1.1" 200 -
+draft-1         | {"role": "draft", "job_id": "job-b281badaae9542ce94f76dbd6e72d57a", "trace_id": "trace-ba5e3b3c7efd479ca97ac016187e0ac2", "status": "SUCCEEDED", "elapsed_ms": 843}
+draft-1         | 172.19.0.1 - - [24/Nov/2026 11:12:33] "POST /v1/run HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:12:36] "GET /health HTTP/1.1" 200 -
+draft-1         | Traceback (most recent call last):
+draft-1         |   File "/course/labs/e13e14/service.py", line 132, in do_POST
+draft-1         |     result = run(data)
+draft-1         |   File "/course/labs/e13e14/service.py", line 47, in run
+draft-1         |     raise ValueError('DRAFT_' + result['status'] + ': ' + str(result.get('error')))
+draft-1         | ValueError: DRAFT_TIMED_OUT: Docker client command exceeded 0.01s
+draft-1         | {"role": "draft", "job_id": "job-d223d409fae0451ab327ea7ebc758a5c", "trace_id": "trace-0dabc6a25a7948dcb7b25b10c426c276", "status": "FAILED", "error_code": "TIMEOUT", "elapsed_ms": 13}
+draft-1         | 172.19.0.1 - - [24/Nov/2026 11:12:39] "POST /v1/run HTTP/1.1" 422 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:12:41] "GET /health HTTP/1.1" 200 -
+draft-1         | {"role": "draft", "job_id": "job-25293e0821aa42b796222fd82c751161", "trace_id": "trace-c81aef7389ed449e8876b98f0ff67306", "status": "SUCCEEDED", "elapsed_ms": 1060}
+draft-1         | 172.19.0.1 - - [24/Nov/2026 11:12:47] "POST /v1/run HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:12:47] "GET /health HTTP/1.1" 200 -
+draft-1         | 127.0.0.1 - - [24/Nov/2026 11:12:52] "GET /health HTTP/1.1" 200 -

@@ -1,0 +1,10 @@
+{
+  "mode": "e12",
+  "repo": "/course/data/integration-sample/repo",
+  "base": "d77b4d866686693ce7540ad7ffbe8c51f7dc742e",
+  "target": "0319556923b4e4522a41c1468d9c929c92d60e08",
+  "candidate": "/course/data/candidate-tuna.Dockerfile",
+  "fixed_report": "/course/data/integration-sample/fixed-md.json",
+  "expected_output": "1",
+  "build_timeout": 1800
+}

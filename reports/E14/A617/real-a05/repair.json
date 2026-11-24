@@ -1,0 +1,25 @@
+{
+  "name": "repair",
+  "commit": "90646db8b8ad932da1a959d152942f987aaffff2",
+  "job_id": "job-59c9c4af21d0499ba9aaead8e41fcc20",
+  "trace_id": "trace-8e64b9bbd0da4d6eb2499a47fce8d3b5",
+  "status": "SUCCEEDED",
+  "data": {
+    "status": "SUCCEEDED",
+    "patch": "/course/work/e14-compose-real-a05-01/repair-work/candidate.patch",
+    "sha256": "0030f288c5f8b50afed0df84334185a2d1276b4bbbdc37f39314ee5c04bef9db",
+    "validation": {
+      "accepted": true,
+      "checks": {
+        "patch_applies": true,
+        "build": true,
+        "test": true,
+        "header_change": true,
+        "no_missing": true
+      },
+      "error": null,
+      "source_unchanged": false,
+      "rollback": false
+    }
+  }
+}

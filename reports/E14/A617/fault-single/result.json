@@ -1,0 +1,192 @@
+{
+  "schema_version": "e14-compose-1",
+  "job_id": "job-10410e9704674cb4b81f83325564147d",
+  "trace_id": "trace-e91ac9dede26487987d3e76d03d475a0",
+  "status": "FAILED",
+  "stages": [],
+  "base_commit": "d77b4d866686693ce7540ad7ffbe8c51f7dc742e",
+  "target_commit": "0319556923b4e4522a41c1468d9c929c92d60e08",
+  "error": "draft HTTP 422: {\"status\": \"FAILED\", \"role\": \"draft\", \"error_code\": \"TIMEOUT\", \"error\": \"DRAFT_TIMED_OUT: Docker client command exceeded 0.01s\"}\n",
+  "artifacts": [
+    {
+      "uri": "base-project/.gitignore",
+      "sha256": "d7bfd39146ded6c9700eb81300e82345464db46cda1e775b8a114a811311bafe",
+      "bytes": 8
+    },
+    {
+      "uri": "base-project/Dockerfile.broken",
+      "sha256": "493f94f95181dd9f4cfb8f47beeed4bfd86e3395ab354742d1d201c409a3e745",
+      "bytes": 122
+    },
+    {
+      "uri": "base-project/Makefile",
+      "sha256": "9206301c23ce4cb93c3fc1434037e475cf69f53e132dc541f6028d05e30258b2",
+      "bytes": 227
+    },
+    {
+      "uri": "base-project/config.h",
+      "sha256": "ac32a92f4af359517c993d6e8583ea2d9b053c2ad171b4c602bc242894bd9696",
+      "bytes": 16
+    },
+    {
+      "uri": "base-project/extra.h",
+      "sha256": "5e20ae92639ee989af5638bd0308a6a86e71bdb4345f60b962ba9db7265e4f7c",
+      "bytes": 16
+    },
+    {
+      "uri": "base-project/helper.c",
+      "sha256": "90a60f959d215b0b91807c6dd2c94acf6684a9fe26629dc1591e9b2ea773d78c",
+      "bytes": 28
+    },
+    {
+      "uri": "base-project/main.c",
+      "sha256": "0da2f94ca7b27cfeae51e4842a4a39f527929b28a82f40b3796d308cc72c1379",
+      "bytes": 113
+    },
+    {
+      "uri": "base-project/unused.h",
+      "sha256": "3f7fec0991b34d614462e29b450c76638f07171936a12df337c578c2d1481b37",
+      "bytes": 13
+    },
+    {
+      "uri": "draft-build/iter-01/Dockerfile",
+      "sha256": "d7779ef1fb4681829c7fa2dd0e4444c16742cc29feaf481330ebd86d47827a88",
+      "bytes": 194
+    },
+    {
+      "uri": "draft-build/iter-01/build-stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "uri": "draft-build/iter-01/build-stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "uri": "draft-build/project/.gitignore",
+      "sha256": "d7bfd39146ded6c9700eb81300e82345464db46cda1e775b8a114a811311bafe",
+      "bytes": 8
+    },
+    {
+      "uri": "draft-build/project/Dockerfile.broken",
+      "sha256": "493f94f95181dd9f4cfb8f47beeed4bfd86e3395ab354742d1d201c409a3e745",
+      "bytes": 122
+    },
+    {
+      "uri": "draft-build/project/Makefile",
+      "sha256": "9206301c23ce4cb93c3fc1434037e475cf69f53e132dc541f6028d05e30258b2",
+      "bytes": 227
+    },
+    {
+      "uri": "draft-build/project/config.h",
+      "sha256": "ac32a92f4af359517c993d6e8583ea2d9b053c2ad171b4c602bc242894bd9696",
+      "bytes": 16
+    },
+    {
+      "uri": "draft-build/project/extra.h",
+      "sha256": "5e20ae92639ee989af5638bd0308a6a86e71bdb4345f60b962ba9db7265e4f7c",
+      "bytes": 16
+    },
+    {
+      "uri": "draft-build/project/helper.c",
+      "sha256": "90a60f959d215b0b91807c6dd2c94acf6684a9fe26629dc1591e9b2ea773d78c",
+      "bytes": 28
+    },
+    {
+      "uri": "draft-build/project/main.c",
+      "sha256": "1e2e75d84a5a28f44438792dbb33ce888a09fad6597094d998ebaf34fa784312",
+      "bytes": 132
+    },
+    {
+      "uri": "draft-build/project/unused.h",
+      "sha256": "3f7fec0991b34d614462e29b450c76638f07171936a12df337c578c2d1481b37",
+      "bytes": 13
+    },
+    {
+      "uri": "draft-build/result.json",
+      "sha256": "e773e9d92e20ed7b1df4ab85f622740b68204eafb99c61d9a82ae15a5cd4e46b",
+      "bytes": 1518
+    },
+    {
+      "uri": "draft-response.json",
+      "sha256": "0ef7d6542006779530e3a98898bbef0e60ebfa53d99d2b9658204dc5ad2cb423",
+      "bytes": 198
+    },
+    {
+      "uri": "logs/base-project-checkout.log",
+      "sha256": "46473cdc95f1e5ca864b153dfaa1e2ff50d6b33a7e66f20c7e2c88b4798ba5ce",
+      "bytes": 38
+    },
+    {
+      "uri": "logs/base-project-clone.log",
+      "sha256": "436ee7648c43cb5c3d90c1835f4d2a7d3568bf50251030eac8a619cf461eefbc",
+      "bytes": 108
+    },
+    {
+      "uri": "logs/base-project-resolve.log",
+      "sha256": "537d3cc21326fde95e0308ab0bc5c68cc7895e51cefc08ac4a14d6235fa36178",
+      "bytes": 41
+    },
+    {
+      "uri": "logs/target-project-checkout.log",
+      "sha256": "9c2206c5438dfc63876bc08fa86f5c4c1831f4013914db9c6a9b4e9521b6b0bd",
+      "bytes": 58
+    },
+    {
+      "uri": "logs/target-project-clone.log",
+      "sha256": "1b2574c7b9b212b686a53a71b8e6344daab8cdc06735f3c1a6c1e39d58d6f54d",
+      "bytes": 110
+    },
+    {
+      "uri": "logs/target-project-resolve.log",
+      "sha256": "6634f7c44c731fe6d7d4283e4a707625a5aaf866353cbcdcfa214536122d4f36",
+      "bytes": 41
+    },
+    {
+      "uri": "request.json",
+      "sha256": "3fc646ab20ca42992a9ca7c01387e06ab0118187f502f04648c1aa5ee0a378d0",
+      "bytes": 355
+    },
+    {
+      "uri": "target-project/.gitignore",
+      "sha256": "d7bfd39146ded6c9700eb81300e82345464db46cda1e775b8a114a811311bafe",
+      "bytes": 8
+    },
+    {
+      "uri": "target-project/Dockerfile.broken",
+      "sha256": "493f94f95181dd9f4cfb8f47beeed4bfd86e3395ab354742d1d201c409a3e745",
+      "bytes": 122
+    },
+    {
+      "uri": "target-project/Makefile",
+      "sha256": "9206301c23ce4cb93c3fc1434037e475cf69f53e132dc541f6028d05e30258b2",
+      "bytes": 227
+    },
+    {
+      "uri": "target-project/config.h",
+      "sha256": "ac32a92f4af359517c993d6e8583ea2d9b053c2ad171b4c602bc242894bd9696",
+      "bytes": 16
+    },
+    {
+      "uri": "target-project/extra.h",
+      "sha256": "5e20ae92639ee989af5638bd0308a6a86e71bdb4345f60b962ba9db7265e4f7c",
+      "bytes": 16
+    },
+    {
+      "uri": "target-project/helper.c",
+      "sha256": "90a60f959d215b0b91807c6dd2c94acf6684a9fe26629dc1591e9b2ea773d78c",
+      "bytes": 28
+    },
+    {
+      "uri": "target-project/main.c",
+      "sha256": "1e2e75d84a5a28f44438792dbb33ce888a09fad6597094d998ebaf34fa784312",
+      "bytes": 132
+    },
+    {
+      "uri": "target-project/unused.h",
+      "sha256": "3f7fec0991b34d614462e29b450c76638f07171936a12df337c578c2d1481b37",
+      "bytes": 13
+    }
+  ]
+}
