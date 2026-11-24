@@ -1,0 +1,175 @@
+{
+ "success": [
+  {
+   "case": "sample-tuna",
+   "dir": "work/e14-compose-sample-02",
+   "status": "SUCCEEDED",
+   "job": "job-3f0c37ff14874dd78d775ffd2f5a41a9",
+   "trace": "trace-2ca3ddc7835f4baebfdf2261e589b21c",
+   "base": "d77b4d866686693ce7540ad7ffbe8c51f7dc742e",
+   "target": "0319556923b4e4522a41c1468d9c929c92d60e08",
+   "stages": {
+    "draft": "SUCCEEDED",
+    "full-check": "SUCCEEDED",
+    "incremental-check": "SUCCEEDED",
+    "repair": "SUCCEEDED",
+    "recheck": "SUCCEEDED"
+   },
+   "report_sha_matches": true,
+   "report": "work/e14-compose-sample-02/incremental/incremental-check.json",
+   "patch_sha_matches": true,
+   "patch": "work/e14-compose-sample-02/repair-work/candidate.patch",
+   "patch_checks": {
+    "patch_applies": true,
+    "build": true,
+    "test": true,
+    "header_change": true,
+    "no_missing": true
+   },
+   "patch_accepted": true,
+   "recheck_commit_is_target": true,
+   "recheck_remaining_missing": 0,
+   "recheck_no_missing": true,
+   "artifacts": 162,
+   "artifact_mismatch": 0
+  },
+  {
+   "case": "real-a05",
+   "dir": "work/e14-compose-real-a05-01",
+   "status": "SUCCEEDED",
+   "job": "job-59c9c4af21d0499ba9aaead8e41fcc20",
+   "trace": "trace-8e64b9bbd0da4d6eb2499a47fce8d3b5",
+   "base": "6b9deff53f8fcf6183204850ac6a9dddb22f1189",
+   "target": "90646db8b8ad932da1a959d152942f987aaffff2",
+   "stages": {
+    "draft": "SUCCEEDED",
+    "full-check": "SUCCEEDED",
+    "incremental-check": "SUCCEEDED",
+    "repair": "SUCCEEDED",
+    "recheck": "SUCCEEDED"
+   },
+   "report_sha_matches": true,
+   "report": "work/e14-compose-real-a05-01/incremental/incremental-check.json",
+   "patch_sha_matches": true,
+   "patch": "work/e14-compose-real-a05-01/repair-work/candidate.patch",
+   "patch_checks": {
+    "patch_applies": true,
+    "build": true,
+    "test": true,
+    "header_change": true,
+    "no_missing": true
+   },
+   "patch_accepted": true,
+   "recheck_commit_is_target": true,
+   "recheck_remaining_missing": 0,
+   "recheck_no_missing": true,
+   "artifacts": 181,
+   "artifact_mismatch": 0
+  },
+  {
+   "case": "real-pair",
+   "dir": "work/e14-compose-real-pair-01",
+   "status": "SUCCEEDED",
+   "job": "job-b281badaae9542ce94f76dbd6e72d57a",
+   "trace": "trace-ba5e3b3c7efd479ca97ac016187e0ac2",
+   "base": "0b62c79a6adb4cd913a814068074575afdbbd18b",
+   "target": "745ecf2621c8221b97bf0a5435ace50150ef57d4",
+   "stages": {
+    "draft": "SUCCEEDED",
+    "full-check": "SUCCEEDED",
+    "incremental-check": "SUCCEEDED",
+    "repair": "SUCCEEDED",
+    "recheck": "SUCCEEDED"
+   },
+   "report_sha_matches": true,
+   "report": "work/e14-compose-real-pair-01/incremental/incremental-check.json",
+   "patch_sha_matches": true,
+   "patch": "work/e14-compose-real-pair-01/repair-work/candidate.patch",
+   "patch_checks": {
+    "patch_applies": true,
+    "build": true,
+    "test": true,
+    "header_change": true,
+    "no_missing": true
+   },
+   "patch_accepted": true,
+   "recheck_commit_is_target": true,
+   "recheck_remaining_missing": 0,
+   "recheck_no_missing": true,
+   "artifacts": 180,
+   "artifact_mismatch": 0
+  },
+  {
+   "case": "sample-recover",
+   "dir": "work/e14-compose-sample-03",
+   "status": "SUCCEEDED",
+   "job": "job-25293e0821aa42b796222fd82c751161",
+   "trace": "trace-c81aef7389ed449e8876b98f0ff67306",
+   "base": "d77b4d866686693ce7540ad7ffbe8c51f7dc742e",
+   "target": "0319556923b4e4522a41c1468d9c929c92d60e08",
+   "stages": {
+    "draft": "SUCCEEDED",
+    "full-check": "SUCCEEDED",
+    "incremental-check": "SUCCEEDED",
+    "repair": "SUCCEEDED",
+    "recheck": "SUCCEEDED"
+   },
+   "report_sha_matches": true,
+   "report": "work/e14-compose-sample-03/incremental/incremental-check.json",
+   "patch_sha_matches": true,
+   "patch": "work/e14-compose-sample-03/repair-work/candidate.patch",
+   "patch_checks": {
+    "patch_applies": true,
+    "build": true,
+    "test": true,
+    "header_change": true,
+    "no_missing": true
+   },
+   "patch_accepted": true,
+   "recheck_commit_is_target": true,
+   "recheck_remaining_missing": 0,
+   "recheck_no_missing": true,
+   "artifacts": 162,
+   "artifact_mismatch": 0
+  }
+ ],
+ "fault": {
+  "dir": "work/e14-compose-fault-02",
+  "status": "FAILED",
+  "job": "job-d223d409fae0451ab327ea7ebc758a5c",
+  "trace": "trace-0dabc6a25a7948dcb7b25b10c426c276",
+  "stages": [],
+  "error": "draft HTTP 422: {\"status\": \"FAILED\", \"role\": \"draft\", \"error_code\": \"TIMEOUT\", \"error\": \"DRAFT_TIMED_OUT: Docker client command exceeded 0.01s\"}\n"
+ },
+ "roles_per_job": {
+  "job-3f0c37ff14874dd78d775ffd2f5a41a9": {
+   "mdfixer/SUCCEEDED": 1,
+   "echecker/SUCCEEDED": 1,
+   "buildchecker/SUCCEEDED": 3,
+   "draft/SUCCEEDED": 1
+  },
+  "job-59c9c4af21d0499ba9aaead8e41fcc20": {
+   "mdfixer/SUCCEEDED": 1,
+   "echecker/SUCCEEDED": 1,
+   "buildchecker/SUCCEEDED": 3,
+   "draft/SUCCEEDED": 1
+  },
+  "job-b281badaae9542ce94f76dbd6e72d57a": {
+   "mdfixer/SUCCEEDED": 1,
+   "echecker/SUCCEEDED": 1,
+   "buildchecker/SUCCEEDED": 3,
+   "draft/SUCCEEDED": 1
+  },
+  "job-25293e0821aa42b796222fd82c751161": {
+   "mdfixer/SUCCEEDED": 1,
+   "echecker/SUCCEEDED": 1,
+   "buildchecker/SUCCEEDED": 3,
+   "draft/SUCCEEDED": 1
+  },
+  "job-d223d409fae0451ab327ea7ebc758a5c": {
+   "draft/FAILED": 1
+  }
+ },
+ "services_log_lines": 784,
+ "services_log_json_entries": 26
+}

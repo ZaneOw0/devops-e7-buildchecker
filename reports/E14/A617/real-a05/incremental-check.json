@@ -1,0 +1,19 @@
+{
+  "name": "incremental-check",
+  "commit": "90646db8b8ad932da1a959d152942f987aaffff2",
+  "job_id": "job-59c9c4af21d0499ba9aaead8e41fcc20",
+  "trace_id": "trace-8e64b9bbd0da4d6eb2499a47fce8d3b5",
+  "status": "SUCCEEDED",
+  "data": {
+    "status": "SUCCEEDED",
+    "report": "/course/work/e14-compose-real-a05-01/incremental/incremental-check.json",
+    "sha256": "a1efae4ebcca06657e67a41e314d6b5cac65caaba2abe1d15423bfa7d21b592e",
+    "findings": [
+      {
+        "type": "MISSING",
+        "target": "helper.o",
+        "dependency": "clamp.h"
+      }
+    ]
+  }
+}

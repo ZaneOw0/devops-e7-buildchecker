@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "kind": "E14-four-service-evidence",
+  "student": "241880617",
+  "group": "A05",
+  "candidate_commit": "68c5454914b48ee2482fb17cd101ff8b8ee854ce",
+  "candidate_source": "PR #26 merge commit on main (2026-11-24T10:56:49Z)",
+  "gate_decision_commit": "1f6ef6b",
+  "image": {
+    "tag": "course-e11e12:241880617",
+    "id": "sha256:9b19710406eb6e2d35454fb36889e3da8fd163ac82a9f035418bcd605c4cd134",
+    "created": "2026-11-10T18:54:41.286770796+08:00",
+    "built_at_candidate_commit": true,
+    "note": "在 M 上重建，全层命中缓存，Created 未变；说明 M 的镜像定义与原构建一致"
+  },
+  "compose": {
+    "file": "labs/e13e14/compose.yaml",
+    "project": "e14-241880617",
+    "roles": ["buildchecker", "echecker", "draft", "mdfixer"],
+    "health": "4/4 healthy",
+    "ports": ["127.0.0.1:18081", "127.0.0.1:18082", "127.0.0.1:18083", "127.0.0.1:18084"]
+  },
+  "runs": [
+    {
+      "dir": "sample",
+      "kind": "fixed-sample",
+      "request": "data/e14-sample-tuna.json",
+      "base": "d77b4d866686693ce7540ad7ffbe8c51f7dc742e",
+      "target": "0319556923b4e4522a41c1468d9c929c92d60e08",
+      "job_id": "job-3f0c37ff14874dd78d775ffd2f5a41a9",
+      "trace_id": "trace-2ca3ddc7835f4baebfdf2261e589b21c",
+      "status": "SUCCEEDED",
+      "stages": ["draft", "full-check", "incremental-check", "repair", "recheck"],
+      "artifacts": 162,
+      "artifact_mismatch": 0,
+      "patch_sha256": "88074f66c291dcad1344c48f6a2b9ddd42d235d9d0415c85fb33310c5b7cb2af",
+      "report_sha256": "71ca325e08bf6ffa1cf209a330feede022ed2da8694a2691fa92cef59b814741"
+    },
+    {
+      "dir": "real-a05",
+      "kind": "real-project-own",
+      "request": "data/e14-real-a05.json",
+      "base": "6b9deff53f8fcf6183204850ac6a9dddb22f1189",
+      "target": "90646db8b8ad932da1a959d152942f987aaffff2",
+      "job_id": "job-59c9c4af21d0499ba9aaead8e41fcc20",
+      "trace_id": "trace-8e64b9bbd0da4d6eb2499a47fce8d3b5",
+      "status": "SUCCEEDED",
+      "stages": ["draft", "full-check", "incremental-check", "repair", "recheck"],
+      "artifacts": 181,
+      "artifact_mismatch": 0,
+      "patch_sha256": "0030f288c5f8b50afed0df84334185a2d1276b4bbbdc37f39314ee5c04bef9db",
+      "report_sha256": "a1efae4ebcca06657e67a41e314d6b5cac65caaba2abe1d15423bfa7d21b592e"
+    },
+    {
+      "dir": "real-pair",
+      "kind": "real-project-paired",
+      "request": "data/real-request.json",
+      "base": "0b62c79a6adb4cd913a814068074575afdbbd18b",
+      "target": "745ecf2621c8221b97bf0a5435ace50150ef57d4",
+      "job_id": "job-b281badaae9542ce94f76dbd6e72d57a",
+      "trace_id": "trace-ba5e3b3c7efd479ca97ac016187e0ac2",
+      "status": "SUCCEEDED",
+      "stages": ["draft", "full-check", "incremental-check", "repair", "recheck"],
+      "artifacts": 180,
+      "artifact_mismatch": 0,
+      "patch_sha256": "a7a3be54d5ba81594acd628725f17aca2b4ce0d1a5aed556d454bb321eb5142a",
+      "report_sha256": "9549f6fb8966f06c16f18792fc4d22b65bfed4710a3804364ee35c394a6e1490"
+    },
+    {
+      "dir": "recover",
+      "kind": "post-fault-retry",
+      "request": "data/e14-sample-tuna.json",
+      "base": "d77b4d866686693ce7540ad7ffbe8c51f7dc742e",
+      "target": "0319556923b4e4522a41c1468d9c929c92d60e08",
+      "job_id": "job-25293e0821aa42b796222fd82c751161",
+      "trace_id": "trace-c81aef7389ed449e8876b98f0ff67306",
+      "status": "SUCCEEDED",
+      "stages": ["draft", "full-check", "incremental-check", "repair", "recheck"],
+      "artifacts": 162,
+      "artifact_mismatch": 0,
+      "patch_sha256": "88074f66c291dcad1344c48f6a2b9ddd42d235d9d0415c85fb33310c5b7cb2af",
+      "report_sha256": "c7172a7a1d2b034cec012fbee9e2c7a3ae603f970369573fa40177b8b6c7ba38"
+    }
+  ],
+  "fault_injection": {
+    "dir": "fault",
+    "request": "data/e14-fault-request.json",
+    "override": {"build_timeout": 0.01},
+    "job_id": "job-d223d409fae0451ab327ea7ebc758a5c",
+    "trace_id": "trace-0dabc6a25a7948dcb7b25b10c426c276",
+    "status": "FAILED",
+    "stages": [],
+    "orchestrate_exit_code": 1,
+    "error": "DRAFT_TIMED_OUT: Docker client command exceeded 0.01s",
+    "recovery_dir": "recover",
+    "recovery_status": "SUCCEEDED",
+    "residual_containers": "none",
+    "residual_processes": "2 x [docker-buildx] <defunct> (已退出，父进程 dockerd 回收)"
+  },
+  "network_blocked_attempt": {
+    "dir": "baseline-failure",
+    "request": "data/integration-sample/e12.json",
+    "candidate": "/course/data/integration-sample/candidate.Dockerfile",
+    "job_id": "job-2e02e91c2bec4a569c70a2e7f4f8cfcb",
+    "status": "FAILED",
+    "error": "DRAFT_TIMED_OUT: Docker client command exceeded 600.0s",
+    "root_cause": "服务器到 deb.debian.org 不可达，apt-get update 卡死；清华源实测 9.2MB/s",
+    "handling": "固定样例改用 data/candidate-tuna.Dockerfile（同 fixture、同 FROM digest，仅 apt 源替换），先例 work/e12-02、work/e13-baseline-241880617-01"
+  },
+  "checks": {
+    "stages_shared_job_trace": true,
+    "report_sha_traceable": true,
+    "patch_sha_and_validation": true,
+    "recheck_target_and_no_missing": true,
+    "artifact_hash_recompute": {"checked": 685, "mismatch": 0},
+    "runtime_log_scan": {"files": 679, "hits": 0, "errors": 0},
+    "services_log": {"lines": 784, "json_entries": 26},
+    "four_roles_per_job": {
+      "job-3f0c37ff14874dd78d775ffd2f5a41a9": {"buildchecker": 3, "echecker": 1, "draft": 1, "mdfixer": 1},
+      "job-59c9c4af21d0499ba9aaead8e41fcc20": {"buildchecker": 3, "echecker": 1, "draft": 1, "mdfixer": 1},
+      "job-b281badaae9542ce94f76dbd6e72d57a": {"buildchecker": 3, "echecker": 1, "draft": 1, "mdfixer": 1},
+      "job-25293e0821aa42b796222fd82c751161": {"buildchecker": 3, "echecker": 1, "draft": 1, "mdfixer": 1},
+      "job-d223d409fae0451ab327ea7ebc758a5c": {"draft": 1}
+    }
+  },
+  "teardown": {
+    "command": "docker compose -f labs/e13e14/compose.yaml -p e14-241880617 down",
+    "scoped_to_project": true,
+    "other_groups_untouched": true
+  },
+  "generated_at": "2026-11-24T19:20:00+08:00",
+  "generator": "checks/e14_verify.py + 手工核对链路字段"
+}
